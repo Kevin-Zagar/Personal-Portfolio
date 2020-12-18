@@ -1,0 +1,16 @@
+body {
+    overflow-x: hidden;
+}
+
+.btn-round { border-radius: 30px; }
+
+.bg-homeWhite { background: #EFF9F0; }
+
+#logo {
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+    .h-md-100 { height: 100vh; }
+    #homeHeader {font-size: small;}
+}
