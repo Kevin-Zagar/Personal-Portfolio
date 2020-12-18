@@ -6,11 +6,19 @@ body {
 
 .bg-homeWhite { background: #EFF9F0; }
 
-#logo {
-    width: 50%;
-}
+#dark-text { color: #2D3047; }
+
+
 
 @media (min-width: 768px) {
-    .h-md-100 { height: 100vh; }
-    #homeHeader {font-size: small;}
+    .h-md-100 { 
+        height: 100vh;
+    }
+    #homeHeader {
+        font-size: 80px;
+    }
+
+    #logo {
+        text-align: left; 
+    }
 }

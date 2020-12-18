@@ -5,43 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!-- TODO Get the ekko light box working for personal Projekts -->
-    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Kevin Zagar - Portfolio</title>
 </head>
 <body>
 
-        <div class="d-md-flex h-md-100">
+        <div class="d-md-flex h-md-100" id="dark-text">
 
-            <!-- First Half -->
+            <!-- First half -->
         
-                <div class="col-md-6 p-0 bg-homeWhite h-md-100">
+                <div class="col-md-6 p-0 h-md-100 bg-homeWhite ">
 
-                    <div class="pt-5 pb-5 pr-5 pl-5">
+                    <!-- Top half-->
+
+                    <div class="p-5">
                         <div class="row text-center">
-                            <div class="col-md-6">
-                                <img id="logo" src="img\logo.png" alt="logo">
+                            <div class="col-md-6" id="logo">
+                                <img src="img\logo.png" alt="logo">
                             </div>
-                            <div class="col-md-3">
-                              EMAIL
+                            <div class="lead col-md-3 align-self-center">
+                              - EMAIL - 
                             </div>
-                            <div class="col-md-3">
-                              GITHUB
+                            <div class="lead col-md-3 align-self-center">
+                              - GITHUB -
                             </div>
                         </div>
                     </div>
+
+                    <div class="pl-5 pr-5">
                         <div class="row">
-                            <div class="col-12 pt-5 v">
-                                <h1 class="display-1 " id="homeHeader">Hi, I am Kevin the </h1>
+                            <div class="col-12 pt-5 ">
+                                <h3 id="homeHeader">Hi, I am Kevin the </h3>
                             </div>       
-                            <div class="col-6 pt-3 pr-3">
-                                <h1 class="display-1">Hi, I am Kevin the </h1>
-                            </div>       
+                            <!-- TODO: Responsiv issue for mobile -->
+                            <! class="col-6 pt-3 pr-3">
+                                <p class="homeParagraph">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                    elit. Alias nam quaerat nobis explicabo corporis dolores. Voluptatem minima 
+                                    hic ipsa sint maxime harum impedit eligendi sed voluptas, iste accusamus voluptatibus quidem commodi </p>
+                            </!->       
                             <div class="col-6 pt-3">
-                                <h1 class="display-1">Hi, I am Kevin the </h1>
+                                <p class="homeParagraph">suscipit modi voluptate. Vitae, nihil maxime mollitia 
+                                    similique recusandae ex, perferendis nulla culpa earum asperiores odit?</p>
                             </div>                      
                         </div>
                     </div>
+                </div>
                 
                 
         
@@ -55,6 +63,9 @@
 
         </div>
         
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
 </body>
 </html>
