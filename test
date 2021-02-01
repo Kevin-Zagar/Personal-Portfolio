@@ -1,0 +1,353 @@
+ <div class="d-md-flex h-md-100 dark-text">
+
+        <!-- First half -->
+
+        <div class="w-100 h-md-100 bg-homeWhite ">
+
+            <!-- Top half-->
+
+            <div class="container p-5">
+                <div class="row text-center">
+                    <div class="col-md-6" id="logo">
+                        <img src="img\logo.png" alt="logo">
+                    </div>
+                    <div class="lead col-md-3 align-self-center">
+                        - EMAIL -
+                    </div>
+                    <div class="lead col-md-3 align-self-center">
+                        - GITHUB -
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero part -->
+            <div class="container pl-5 pr-5 ">
+                <div class="row">
+                    <div class="col-12 pt-5 ">
+                        <!-- TODO: Typing effekt -->
+                        <h2 class="pb-3" id="homeHeader">I am Kevin, <br>the
+                            <span class="txt-type" data-wait="3000"
+                                data-words='["Web Dev", "Designer", "UI/UX Dev", "Artist"]'>
+                            </span>
+                        </h2>
+                    </div>
+                </div>
+                <!-- TODO: Responsiv issue for mobile -->
+
+                <div class="row">
+                    <!-- TODO: two or one col-->
+                    <div class="col-12 pr-3">
+                        <p>My work enabled me the ability for test driven development,
+                            contributing to highly collaborative work environment,
+                            determining customer satisfaction and managing my work area independently and confidently.
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- --- About Page --- -->
+            <div class="shadow-lg aboutContainer lighter-text border border-bottom-0 border-left-0 border-about">
+                <!-- Section A: About Header  -->
+                <section class="text-center about-Section-Header">
+                    <div class="container">
+                        <h3 class="section-title">About Me</h3>
+                        <div class="bottom-line "></div>
+                        <p class="lead mb-1">Everything you need to know</p>
+                        <div class="container open-Contact-Container mt-2">
+                            <button id="flipAboutPage" class="shadow btn golden-Button pl-5 pr-5 pt-1 pb-1 ">
+                                <i class="fas fa-chevron-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section B: About Info Card -->
+                <section class="mt-5 hide-before-showing-AboutPage">
+                    <div class="card mb-3 mx-auto d-flex justify-content-center" style="max-width: 640px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <!-- TODO: smoother Up Animation -->
+                                <img src="img\IMG_0569.JPG" class="card-img"
+                                    alt="There should be a nice picture of me, ups">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body dark-text">
+                                    <h5 class="card-title ">Take a look at my card</h5>
+                                    <p class="card-text">Independent Web Developer with three years of experience in
+                                        a leading international engineering and consulting Company. Blending the art
+                                        of design
+                                        with the skill of programming.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Last updated 2 Days ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Close About Page Button -->
+                <div class="hide-before-showing-AboutPage">
+                    <button id="closeAboutPage"
+                        class="btn shadow light-Button  mx-auto d-flex justify-content-center pl-5 pr-5 pt-2 pb-2 mt-3">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- --- Personal Projekt Page --- -->
+            <div class="projektsContainer shadow-lg lighter-text border border-bottom-0 border-projekts">
+                <!-- Section A: Personal projekts Header -->
+                <section class="text-center">
+                    <div class="container">
+                        <h3 class="section-title">Personal Projekts</h3>
+                        <div class="bottom-line "></div>
+                    </div>
+                </section>
+                <!-- Carousel Slide Show Section -->
+
+                <div class="container mx-auto d-flex justify-content-center">
+                    <!-- Button flip-->
+                    <button id="flipPersonalProjekts" class="shadow btn light-Button mt-2 pl-5 pr-5 pt-1 pb-1 ">
+                        <i class="fas fa-chevron-up"></i>
+                    </button>
+                </div>
+
+                <!-- Section B: Work -->
+                <section>
+                    <div class="container mt-2 closePersonalProjektss">
+                        <!-- HERE WORK PROJEKTS -->
+                        <section id="work-a" class="text-center py-3">
+                            <div class="container">
+                                <h2 class="section-title">My Work</h2>
+                                <div class="bottom-line"></div>
+                                <p class="lead">
+                                    Check out some of my projects
+                                </p>
+                                <div class="items">
+                                    <div class="item">
+                                        <div class="item-image">
+                                            <img src="img/items/item1.png" alt="" />
+                                        </div>
+                                        <div class="item-text">
+                                            <div class="item-text-wrap">
+                                                <p class="item-text-category">Design</p>
+                                                <h2 class="item-text-title">Great Gradients</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-image">
+                                            <img src="img/items/item2.png" alt="" />
+                                        </div>
+                                        <div class="item-text">
+                                            <div class="item-text-wrap">
+                                                <p class="item-text-category">UI/UX</p>
+                                                <h2 class="item-text-title">World Experience</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-image">
+                                            <img src="img/items/item3.png" alt="" />
+                                        </div>
+                                        <div class="item-text">
+                                            <div class="item-text-wrap">
+                                                <p class="item-text-category">Photography & Design</p>
+                                                <h2 class="item-text-title">Vanishing</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-image">
+                                            <img src="img/items/item4.png" alt="" />
+                                        </div>
+                                        <div class="item-text">
+                                            <div class="item-text-wrap">
+                                                <p class="item-text-category">Design</p>
+                                                <h2 class="item-text-title">Gap INC</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-image">
+                                            <img src="img/items/item5.png" alt="" />
+                                        </div>
+                                        <div class="item-text">
+                                            <div class="item-text-wrap">
+                                                <p class="item-text-category">Mobile UI Design</p>
+                                                <h2 class="item-text-title">Face THe Experience</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-image">
+                                            <img src="img/items/item6.png" alt="" />
+                                        </div>
+                                        <div class="item-text">
+                                            <div class="item-text-wrap">
+                                                <p class="item-text-category">Design Concept</p>
+                                                <h2 class="item-text-title">Bezier Curves</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-image">
+                                            <img src="img/items/item7.png" alt="" />
+                                        </div>
+                                        <div class="item-text">
+                                            <div class="item-text-wrap">
+                                                <p class="item-text-category">Photography</p>
+                                                <h2 class="item-text-title">Dock Ponder</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-image">
+                                            <img src="img/items/item8.png" alt="" />
+                                        </div>
+                                        <div class="item-text">
+                                            <div class="item-text-wrap">
+                                                <p class="item-text-category">Web Applications</p>
+                                                <h2 class="item-text-title">Restaurant App</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-image">
+                                            <img src="img/items/item9.png" alt="" />
+                                        </div>
+                                        <div class="item-text">
+                                            <div class="item-text-wrap">
+                                                <p class="item-text-category">Social Network Concept</p>
+                                                <h2 class="item-text-title">FriendFeed</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Close Personal Projekts -->
+                            <button id="closePersonalProjekts"
+                                class=" shadow btn light-Button pl-5 pr-5 mt-5 pb-1 mx-auto d-flex justify-content-center">
+                                Show less
+                            </button>
+                        </section>
+                    </div>
+                </section>
+            </div>
+
+
+            <!-- --- Contact Page --- -->
+            <div class="shadow-lg contactContainer lighter-text border border-bottom-0 border-right-0 border-contact">
+                <!-- Section A: Contact Form -->
+                <section class="text-center pt-3 contact-Section-Header">
+                    <div class="container">
+                        <h3 class="section-title">Contact Me</h3>
+                        <div class="bottom-line "></div>
+                        <p class="lead mb-1">Here is how you can reach me</p>
+                        <div class="container open-Contact-Container mt-2">
+                            <!-- Button flip-->
+                            <button id="flipContactPage" class="shadow btn dark-Button pl-5 pr-5 pt-1 pb-1 ">
+                                <i class="fas fa-chevron-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- Content is not vidoble from here on out... -->
+                <div class="hide-befor-showing-ContactPage">
+                    <form class="container-fluid pt-5">
+                        <div class="row row-cols-1 text-inputs-container">
+                            <input type="text" class="col text-input hover-text-slide name-input" placeholder="Name"
+                                name="name" />
+                            <input type="text" class="col text-input hover-text-slide subject-input"
+                                placeholder="Subject" name="subject" />
+                            <input type="email" class="col text-input hover-text-slide email-input"
+                                placeholder="Email Address" name="email" />
+                            <input type="text" class="col text-input hover-text-slide phone-input"
+                                placeholder="Phone Number" name="phone" />
+                            <textarea class="col message-input hover-text-slide" placeholder="Enter Message"
+                                name="message"></textarea>
+                            <div class="my-2">
+                                <!-- TODO:  <div data-netlify-recaptcha="true"></div> -->
+                            </div>
+                        </div>
+                    </form>
+                    <!-- TODO: Toast that it was send -->
+                    <button class="kk-submit ">
+                        <svg width="196" height="70" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+                            <rect class="btn-shape btn-bg" x="3" y="3" width="190" height="64" rx="32" ry="32"
+                                fill="#EFF9F0" fill-opacity="1" stroke="#2D3047" stroke-width="4" />
+                            <rect class="btn-shape btn-color" x="3" y="3" width="190" height="64" rx="32" ry="32"
+                                fill="#EFF9F0" fill-opacity="0" stroke="#2D3047" stroke-width="6" />
+                            <text class="checkNode" x="96" y="40" font-family="Montserrat" font-size="22"
+                                fill-opacity="1" text-anchor="middle" fill="#EFF9F0">
+                                ✔
+                            </text>
+                            <text class="textNode" x="96" y="40" transform="scale(1)" font-family="Montserrat"
+                                font-size="16" fill-opacity="1" text-anchor="middle" fill="#EFF9F0">
+                                Submit
+                            </text>
+                        </svg>
+                    </button>
+
+
+
+                    <!-- Section B: Contact Info -->
+                    <div id="section-B-phrase"
+                        class="shadow section-B-Header d-flex justify-content-center  mt-3 ml-5 mr-5 mb-3">
+                        <h1>Let's Start Your Next Project</h1>
+                    </div>
+                    <section class="pt-5">
+                        <div class="container">
+                            <div class="row row-cols-2">
+                                <div class="col d-flex justify-content-end">
+                                    <div class="diamond">
+                                        <i class="icon-In-Diamond fas fa-envelope fa-2x"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <h3>Email</h3>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <p>kevin.zagar98@gmail.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="col d-flex justify-content-end">
+                                    <div class="diamond">
+                                        <i class="icon-In-Diamond fas fa-address-card fa-2x"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <h3>Address</h3>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <p>West Palm Beach</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Section C: Tagline -->
+                    <section id="contact-c" class="pt-2">
+                        <!-- TODO: Make it glare up when hovering over the down Button -->
+
+                    </section>
+                    <button id="closeContactPage"
+                        class="btn shadow dark-Button mx-auto d-flex justify-content-center pl-5 pr-5 pt-2 pb-2 mt-3">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- Second half -->
+        </div>

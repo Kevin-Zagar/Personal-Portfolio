@@ -2,33 +2,99 @@ body {
     overflow-x: hidden;
 }
 
-.btn-round { border-radius: 30px; }
+.btn-round {
+    border-radius: 30px;
+}
 
-.bg-homeWhite { background: #EFF9F0; }
+.bg-homeWhite {
+    background: #292929 !important;
+}
 
-/* --- Id's  --- */
+.secondHalfBackground {
+    background: #EFF9F0;
+}
 
-#dark-text { color: #2D3047; }
+.cont {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
 
-#lighter-text { color: #EFF9F0; }
+
+
+/* --- Utilities  --- */
+
+/* hidden components before letting them fade in with jQuery */
+
+.dark-text {
+    color: #2D3047;
+}
+
+.lighter-text {
+    color: #EFF9F0;
+}
+
+.dark-Button {
+    background-color: #2D3047;
+    color: #EFF9F0;
+}
+
+.light-Button {
+    background-color: #EFF9F0;
+    color: #2D3047;
+}
+
+.golden-Button {
+    background-color: #A6823A;
+}
+
+/* --- Home Section --- */
+
 
 /* --- Containers --- */
 
 .projektsContainer {
     background: #003053;
+    position: absolute;
+    z-index: 1;
+    flex-wrap: nowrap;
+    left: 12.5%;
+    bottom: 0%;
+    border-radius: 100% 100% 0px 0px;
+    width: 75%;
 }
 
 .aboutContainer {
     background: #2D3047;
+    position: absolute;
+    z-index: 2;
+    width: 30%;
+    flex-wrap: nowrap;
+    left: 0%;
+    bottom: 0%;
+    border-radius: 0px 100% 0px 0px;
 }
 
 .contactContainer {
     background: #A6823A;
+    position: absolute;
+    z-index: 2;
+    width: 30%;
+    flex-wrap: nowrap;
+    right: 0%;
+    bottom: 0%;
+    border-radius: 100% 0px 0px 0px;
 }
 
-
-
 /* --- Border classes --- */
+
+
+.txt-type>.txt {
+    border-right: 0.2rem solid #EFF9F0;
+}
 
 .border {
     border-width: 15px !important;
@@ -40,6 +106,7 @@ body {
 
 .border-about {
     border-color: #515577 !important;
+    
 }
 
 .border-contact {
@@ -47,24 +114,358 @@ body {
 }
 
 
-/* --- Carusel --- */
+/* --- Personal Projekts --- */
+/* Not Fliped: */
+/* Section A: Header and Carousel */
 
 .padding-top {
     margin-top: 100px !important;
 }
 
 
+
+/* Section B: Close */
+
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.item {
+    position: relative;
+    background: #ffbc00;
+    overflow: hidden;
+}
+
+.item::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: inherit;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+    transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.item:hover:after {
+    transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+}
+
+.item:hover .item-image {
+    transform: scale(1.2);
+}
+
+.item:hover .item-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.item-image {
+    height: auto;
+    transform: translateZ(0);
+    display: block;
+    transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.item-image:before {
+    content: '';
+    display: block;
+    padding-top: 75%;
+    overflow: hidden;
+}
+
+.item-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    line-height: 0;
+}
+
+.item-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    transform: translateY(-20%);
+    transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+    transition-delay: 300ms;
+}
+
+.item-text-wrap {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.item-text-title {
+    font-size: 2rem;
+    padding: 0 1rem;
+    margin: 5px 0 0 0;
+}
+
+.item-text-category {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.closePersonalProjektss {
+    display: none;
+}
+
+/* --- About page --- */
+.hide-before-showing-AboutPage{
+    display: none;
+}
+
+.about-Section-Header{
+    margin-top: 35%;
+    margin-right: 25%;
+}
+
+.hide-WorkPage {
+    display: none;
+}
+
+
+/* Section B: Info Card */
+
+
+/* --- Contact page --- */
+
+.contact-Section-Header{
+    margin-top: 35%;
+    margin-left: 25%;
+}
+
+/* No Display */
+.hide-befor-showing-ContactPage{
+    display: none;
+}
+
+.bottom-line {
+    height: 2px;
+    width: 5rem;
+    background: #EFF9F0;
+    display: block;
+    margin: 0 auto;
+}
+
+.open-Contact-Container {
+    height: 6px;
+}
+
+/* Section A: Contact Form */
+.text-inputs-container {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+ .text-input {
+    padding: 10px;
+    background: none !important;
+    color: #EFF9F0 !important;
+
+    border-left: hidden;
+    border-bottom: hidden;
+    border-right: hidden;
+    border-top: groove;
+}
+
+.message-input {
+    height: 100px;
+    max-height: 200px;
+
+    padding: 10px;
+    background: none !important;
+    color: #EFF9F0 !important;
+
+    border-left: hidden;
+    border-bottom: groove;
+    border-right: hidden;
+    border-top: groove;
+}
+
+::placeholder {
+    color: #c7d8c8
+}
+
+.hover-text-slide:hover::placeholder {
+    transform: translateX(30px);
+    transition: 200ms transform;
+}
+
+#flipContactPage {
+    background-color: #2D3047;
+    color: #EFF9F0;
+}
+
+/* 
+Submit button
+*/
+.center-component {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+button.kk-submit {
+    background: transparent;
+    border: none;
+}
+
+button.kk-submit.is-active {
+    cursor: default;
+}
+
+button.kk-submit:focus {
+    outline: none;
+}
+
+button.kk-submit::-moz-focus-inner {
+    border: 0;
+}
+
+button.kk-submit svg text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button.kk-submit svg text.textNode {
+    fill: #2D3047;
+}
+
+button.kk-submit svg text.checkNode {
+    fill-opacity: 0;
+}
+
+button.kk-submit svg rect.btn-shape.btn-bg {
+    stroke: #c8c8c8;
+    fill: #EFF9F0;
+}
+
+button.kk-submit svg rect.btn-shape.btn-color {
+    stroke: #2D3047;
+    fill: #EFF9F0;
+    stroke-dasharray: 453;
+    stroke-dashoffset: 0;
+}
+
+/* Section B: Contact Info */
+
+.section-B-Header {
+    background-color: #2D3047;
+    border-radius: 30px;
+    text-align: center;
+}
+
+/* needed a little push from the left too get it centered  */
+.diamond {
+    width: 75px;
+    height: 75px;
+    background: transparent;
+    border: solid #EFF9F0;
+
+    /* Rotate */
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    /* Rotate Origin */
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+.fa-envelope {
+    -webkit-transform: rotate(+45deg);
+    -moz-transform: rotate(+45deg);
+    -ms-transform: rotate(+45deg);
+    -o-transform: rotate(+45deg);
+    transform: rotate(+45deg);
+}
+
+.icon-In-Diamond {
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.fa-address-card {
+    -webkit-transform: rotate(+45deg);
+    -moz-transform: rotate(+45deg);
+    -ms-transform: rotate(+45deg);
+    -o-transform: rotate(+45deg);
+    transform: rotate(+45deg);
+}
+
+
+
+
+
+
+/* --- Media queries --- */
+
 @media (min-width: 768px) {
-    .h-md-100 { 
+    body {
+        overflow: hidden;
+    }
+
+    .h-md-100 {
         height: 100vh;
     }
+
     #homeHeader {
         font-size: 80px;
     }
 
     #logo {
-        text-align: left; 
+        text-align: left;
     }
 
-    
+
+    .projektsContainer {
+        height: 33%;
+    }
+
+    .aboutContainer {
+        height: 50%;
+    }
+
+    .contactContainer {
+        height: 50%;
+    }
+
+    /* --- contactPage --- */
+    .section-title {
+        font-size: 45px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
