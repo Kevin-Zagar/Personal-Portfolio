@@ -10,11 +10,9 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="https://kit.fontawesome.com/1d62a1b076.js" crossorigin="anonymous"></script>
 
-
     <title>Kevin Zagar - Portfolio</title>
 
 </head>
-
 
 <body>
     <div class="slider-one"></div>
@@ -22,54 +20,105 @@
     <div class="slider-three"></div>
 
     <!-- Dard Backgeround SLider -->
-    <img src="img\eye-work-hero-img.JPG" class="slider-about"></img>
+    <div class="slider-about shadow-lg"></div>
     <!-- White Background for the main background -->
     <div class="aboutPage-background"></div>
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark m-4">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main_nav">
-            <a id="logo" class="navbar-brand" href="#"><img src="img\logo.png" alt="logo" width="60px"></a>
-            <ul class="navbar-nav mx-auto">
-                <li id="home" class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
-                <li id="about" class="nav-item"><a class="nav-link openAboutPage"> About </a></li>
-                <li id="work" class="nav-item active"><a class="nav-link openWorkPage"> Work </a></li>
-                <li id="contact" class="nav-item"><a class="nav-link" href="#"> Contact </a></li>
-            </ul>
-            <span id="phone" class="lighter-text red-background nav-phone">000-535-787</span>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top " id="banner">
+        <div class="container">
+            <!-- Brand -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <a id="logo" class="navbar-brand" href="#"><img src="img\logo.png" alt="logo" width="60px"></a>
+                <ul class="navbar-nav mx-auto">
+                    <li id="home" class="nav-item "> <a class="nav-link" href="index.html">Home</a> </li>
+                    <li id="about" class="nav-item"><a class="nav-link openAboutPage"> About </a></li>
+                    <li id="work" class="nav-item active"><a class="nav-link openWorkPage"> Work </a></li>
+                    <li id="contact" class="nav-item"><a class="nav-link" href="#"> Contact </a></li>
+                </ul>
+                <span id="phone" class="lighter-text red-background nav-phone">000-535-787</span>
+            </div>
         </div>
-        <!-- navbar-collapse.// -->
     </nav>
 
-    <section class="section about-s1 home-container pt-5">
-        <div class="hero">
+
+    <!-- Hero Section -->
+    <section class="section about-s1 home-container pt-5 ">
+        <div class="hero shadow-lg">
             <img src="img\eye-work-hero-img.JPG" alt="">
             <h1 class="headline-hero lighter-text ml-5">Personal Projekts</h1>
         </div>
     </section>
 
-    <svg class="shape9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#525252" fill-opacity="0.5"
-            d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,261.3C1248,288,1344,288,1392,288L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-        </path>
+    <!-- Scroll Down Icon -->
+    <span class="scroll-btn mt-5 pt-5">
+        <a href="#">
+            <span class="mouse">
+                <span>
+                </span>
+            </span>
+        </a>
+    </span>
+
+    <!-- Shapes -->
+    <svg class="work-shape1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="5%" id="blobSvg">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+                <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+            </linearGradient>
+        </defs>
+        <path id="blob"
+            d="M379.5,341.5Q355,433,248,435.5Q141,438,103,344Q65,250,110,168Q155,86,245.5,94Q336,102,370,176Q404,250,379.5,341.5Z"
+            fill="url(#gradient)"></path>
     </svg>
-    <svg class="shape10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#666666" fill-opacity="0.5"
-            d="M0,128L48,149.3C96,171,192,213,288,208C384,203,480,149,576,154.7C672,160,768,224,864,245.3C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-        </path>
+
+
+    <svg class="work-shape2" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="4%" id="blobSvg">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+                <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+            </linearGradient>
+        </defs>
+        <path id="blob"
+            d="M380,344Q359,438,259.5,422Q160,406,98.5,328Q37,250,94.5,165Q152,80,258,66.5Q364,53,382.5,151.5Q401,250,380,344Z"
+            fill="url(#gradient)"></path>
     </svg>
-    <svg class="shape11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#707070" fill-opacity="0.5"
-            d="M0,288L48,282.7C96,277,192,267,288,250.7C384,235,480,213,576,208C672,203,768,213,864,224C960,235,1056,245,1152,213.3C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-        </path>
+
+
+    <svg class="work-shape3" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="3%" id="blobSvg">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+                <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+            </linearGradient>
+        </defs>
+        <path id="blob"
+            d="M408.5,353.5Q369,457,268.5,424.5Q168,392,110.5,321Q53,250,89,142Q125,34,244.5,43.5Q364,53,406,151.5Q448,250,408.5,353.5Z"
+            fill="url(#gradient)"></path>
     </svg>
+
+
+    <svg class="shape5" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="60vh" id="blobSvg">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+                <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+            </linearGradient>
+        </defs>
+        <path id="blob"
+            d="M392,331Q344,412,237.5,434Q131,456,83,353Q35,250,104.5,184Q174,118,261,99Q348,80,394,165Q440,250,392,331Z"
+            fill="url(#gradient)"></path>
+    </svg>
+
 
 
     <!-- INFO SECTION -->
     <section class="work-section-web">
+        <div class="parallax img2 mt-5 pt-5"></div>
         <div class="info-web">
             <div class="info-text">
                 <h1>Web Development</h1>
@@ -78,11 +127,10 @@
             </div>
         </div>
         <div class="card-web">
-
-            <article>
+            <article class="web-3d">
                 <div class="item-wrapper">
                     <figure>
-                        <img class="image" src="img\flower-img.jpg" alt="Flower">
+                        <img class="image" src="img\Placeholder-Three.png" alt="Flower">
                         </img>
                         <div class="lighting"></div>
                     </figure>
@@ -95,12 +143,12 @@
             </article>
         </div>
     </section>
-   
+
     <!-- INFO SECTION -->
     <section class="work-section-web">
 
         <div class="card-web">
-            <article>
+            <article class="art-3d">
                 <div class="item-wrapper">
                     <figure>
                         <img class="image" src="img\flower-img.jpg" alt="Flower">
@@ -125,10 +173,10 @@
     </section>
 
 
-    
 
-       <!-- Section C: Work -->
-       <section class="mt-5">
+
+    <!-- Section C: Work -->
+    <section class="mt-5">
         <div class="container mt-2 closePersonalProjektss">
             <!-- HERE WORK PROJEKTS -->
             <section id="work-a" class="text-center py-3">
@@ -240,7 +288,7 @@
                         </div>
                     </div>
                 </div>
-         
+
             </section>
         </div>
     </section>
@@ -333,6 +381,7 @@
     <script src="js\transitionAnimation.js"></script>
     <!-- 3D Card Effect -->
     <script src="js\3D-Card-Effekt.js"></script>
+    <script src="js\navbar.js"></script>
 </body>
 
 

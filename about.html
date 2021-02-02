@@ -26,7 +26,7 @@
     <!-- White Background for the main background -->
     <div class="aboutPage-background"></div>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top " id="banner">
         <div class="container">
       <!-- Brand -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
@@ -36,8 +36,8 @@
         <a id="logo" class="navbar-brand" href="#"><img src="img\logo.png" alt="logo" width="60px"></a>
         <ul class="navbar-nav mx-auto">
             <li id="home" class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
-            <li id="about" class="nav-item"><a class="nav-link openAboutPage"> About </a></li>
-            <li id="work" class="nav-item active"><a class="nav-link openWorkPage"> Work </a></li>
+            <li id="about" class="nav-item active"><a class="nav-link openAboutPage"> About </a></li>
+            <li id="work" class="nav-item "><a class="nav-link openWorkPage"> Work </a></li>
             <li id="contact" class="nav-item"><a class="nav-link" href="#"> Contact </a></li>
         </ul>
         <span id="phone" class="lighter-text red-background nav-phone">000-535-787</span>
@@ -45,17 +45,26 @@
         </div>
     </nav>
 
+     <!-- Hero Section -->
     <section class="section about-s1 home-container pt-5">
-        <div class="hero">
+        <div class="hero shadow-lg">
             <img src="img\hero-img.jpg" alt="">
             <h1 class="headline-hero lighter-text">About Me</h1>
         </div>
     </section>
 
+ 
 
-
-
-
+    <svg class="shape5" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="60vh" id="blobSvg">
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+            <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+          </linearGradient>
+        </defs>
+        <path id="blob" d="M392,331Q344,412,237.5,434Q131,456,83,353Q35,250,104.5,184Q174,118,261,99Q348,80,394,165Q440,250,392,331Z" fill="url(#gradient)"></path>
+      </svg>
+      
 
 
     <!-- INFO SECTION -->
@@ -313,18 +322,7 @@
 <!-- Transition Animation  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <script src="js\transitionAnimation.js"></script>  
- <script>
-        	$(document).on("scroll", function(){
-		if
-      ($(document).scrollTop() > 86){
-		  $("#banner").addClass("shrink");
-		}
-		else
-		{
-			$("#banner").removeClass("shrink");
-		}
-	});
-    </script>
+<script src="js\navbar.js"></script>
 </body>
 
 
