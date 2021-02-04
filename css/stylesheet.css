@@ -8,6 +8,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #EFF9F0;
+    overflow-x: hidden;
 }
 
 a {
@@ -17,7 +18,7 @@ a {
 
 /* Utilities */
 .lighter-text {
-    color: #EFF9F0;
+    color: #430d82;
 }
 
 .red-background {
@@ -79,7 +80,7 @@ a {
 }
 
 .navbar-brand {
-    color: #fff;
+    color: gray;
     font-size: 25px;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
     font-weight: 700;
@@ -91,7 +92,7 @@ a {
     font-size: 120%;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #fff;
+    color: black;
     font-family: 'Gothic A1', sans-serif;
 
 }
@@ -121,8 +122,8 @@ nav {
 .shrink {
     padding-top: 0;
     padding-bottom: 0;
-    transition: all 1s ease;
-    background: linear-gradient(60deg, rgba(246, 19, 61, 1) 0%, rgba(249, 94, 65, 1) 46%, rgba(252, 176, 69, 1) 100%);
+    transition: all 0.5s ease;
+    background-color: #EFF9F0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
@@ -507,6 +508,7 @@ p {
     top: 90%;
     left: 10%;
     z-index: -5;
+    filter: blur(1rem);
 }
 
 .shape6 {
@@ -597,15 +599,16 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 85vh;
-    opacity: 0.8;
+    height: 80vh;
+    
     z-index: -1;
-    background: rgb(246, 19, 61);
-    background: linear-gradient(60deg, rgba(246, 19, 61, 1) 0%, rgba(249, 94, 65, 1) 46%, rgba(252, 176, 69, 1) 100%);
 
-    border-radius: 0px 0px 50px 50px;
 }
 
+.svg-work-slider {
+    position: absolute;
+    right: 0;
+}
 
 /* --- Hero Section for About and Work Page --- */
 .home-container {
@@ -614,47 +617,57 @@ p {
     justify-content: center;
     align-items: center;
     margin-bottom: 0%;
-
-    border-radius: 50px;
 }
 
 .hero {
-    height: 60%;
-    width: 100%;
+    height: 50%; 
+    width: 58%;
     position: relative;
-    border-radius: 50px;
+    left: 5% ;
+    top: 20%;
 }
 
 .hero img {
-    width: 100%;
-    height: 100%;
+    left: 20% ;
+    width: 50%;
+    height: 58%;
     object-fit: cover;
-    border-radius: 5px;
     border-radius: 50px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .headline-hero {
     position: absolute;
-    top: 70%;
-    left: 10%;
-    font-size: 80px;
+    top: 10%;
+    left: 0%;
     transform: translate(-10%, 70%);
-    color: #EFF9F0;
     z-index: 3;
     height: 0;
+}
+
+.hero h1{
+    font-size: 90px;
+}
+
+.hero p {
+    margin-top: 8%;
+    margin-left: 1.5%;
+    font-size: 20px;
 }
 
 .hero::after {
     content: "";
     background: black;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 50%;
     position: absolute;
     left: 0;
     top: 0;
-    opacity: 0.1;
+    opacity: 0;
 
     border-radius: 50px;
+   
 }
 
 .shape11 {
@@ -809,10 +822,25 @@ p {
 }
 
 /* Shapes */
+.work-shape-top-left{
+    position: absolute;
+    top: 5%;
+    left: -8%;
+    z-index: 50;
+}
+
+.work-shape {
+    position: absolute;
+    top: 50vh;
+    right: 15vh;
+}
+
 .work-shape1 {
     position: absolute;
-    top: 90vh;
-    right: 10vh;
+    top: 50vh;
+    right: -60vh;
+    z-index: 50;
+    filter: blur(10rem);
 }
 
 .work-shape2 {
@@ -827,11 +855,113 @@ p {
     right: 12vh;
 }
 
+.work-shape4 {
+    position: absolute;
+    top: 70%;
+    left: -20%;
+    z-index: -5;
+    filter: blur(5rem);
+}
+
+.work-shape5 {
+    position: absolute;
+    top: 100%;
+    right: 50vh;
+    z-index: -10;
+}
+
+.work-shape6 {
+    position: absolute;
+    top: 130%;
+    left: 8vh;
+    z-index: -3;
+}
+
+/* Parallax CSS */
+
+.parallax-web-container{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 15%;
+
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .parallax-web-innerContainer {
+    width: 80%;
+    height: 100%;
+    align-self: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    border-radius: 10px;
+  }
+  
+  .background-web {
+    background-image: url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left: auto;
+    margin-right: auto;
+  
+    border-radius: 10px;
+  }
+  @media (max-width: 767px) {
+    .background-oregon-grapes {
+      height: 330px;
+      width: 330px;
+    }
+  }
+
+/* Parallax CSS */
+.parallax-art-container{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  
+  
+  
+  .background-art {
+    background-image: url("https://images.pexels.com/photos/2935006/pexels-photo-2935006.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left: auto;
+    margin-right: auto;
+  
+    border-radius: 10px;
+  }
+  @media (max-width: 767px) {
+    .background-oregon-grapes {
+      height: 330px;
+      width: 330px;
+    }
+  }
+
+
 /* Info Section */
 .work-section-web {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 10%;
     height: 70vh;
     display: flex;
     justify-content: space-evenly;
