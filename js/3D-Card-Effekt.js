@@ -5,8 +5,8 @@ articles.mousemove(function (e) {
 var current = $(this),
     x = current.width() - e.offsetX * 2,
     y = current.height() - e.offsetY * 2,
-    rx = -x / 30,
-    ry = y / 24,
+    rx = -x / 40,
+    ry = y / 30,
     deg = Math.atan2(y, x) * (180 / Math.PI) + 45;
 current.css({
     "transform": "scale(1.05) rotateY(" + rx + "deg) rotateX(" + ry + "deg)"

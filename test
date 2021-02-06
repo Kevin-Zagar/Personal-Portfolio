@@ -351,3 +351,37 @@
 
             <!-- Second half -->
         </div>
+
+
+
+
+            <!-- Web Development section-->
+    <section id="web-top-space" class="parallax-container">
+
+        <div class="row parallax-web-innerContainer">
+
+            <div class="col-3 background-web"></div>
+
+            <div class="col-4 background-web"></div>
+
+            <div class="col-3 background-web"></div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="parallax-container">
+
+        <div class="row parallax-web-innerContainer">
+
+            <div class="col-3 background-art"></div>
+
+            <div class="col-4 background-art"></div>
+
+            <div class="col-3 background-art"></div>
+
+        </div>
+
+    </section>
