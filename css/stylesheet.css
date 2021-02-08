@@ -37,6 +37,14 @@ button {
     background-color: #F6133D;
 }
 
+p {
+    font-size: 18px;
+    }
+    
+     h1 {
+        font-size: 50px;
+    }
+
 /* Buttons*/
 .btn-round {
     border-radius: 22.5px;
@@ -480,9 +488,16 @@ footer p {
 }
 
 
+.home-shape-hero {
+    position: absolute;
+    top: 0vh;
+    
+}
 
-
-
+.hero-container {
+    width: 100vh;
+    height: 100vh;
+}
 /* Hero Home */
 .header-home {
     padding-top: 10%;
@@ -611,13 +626,7 @@ footer p {
 /* ##################################*/
 
 /* Utilities About Page */
-.about-page p {
-font-size: 18px;
-}
 
-.about-page h1 {
-    font-size: 50px;
-}
 
 /* About Box */
 .aboutContainer {
@@ -661,7 +670,6 @@ font-size: 18px;
     margin-top: 10vh;
     width: 100% !important;
     height: 80vh;
-    
   }
   
   .about-hero-img {
@@ -811,7 +819,7 @@ section p span {
   
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -500px;
+  background-position: -580px;
 }
 
 /* About Page: Section C: Progress Bars  */
@@ -838,7 +846,7 @@ section p span {
 }
 
 .tile-progress {
-    background: #00a65b;
+
     color: #fff;
     margin-bottom: 20px;
     -webkit-border-radius: 5px;
@@ -893,49 +901,15 @@ section p span {
     border-radius: 0 0 3px 3px;
 }
 
-.tile-progress.tile-red {
-    background-color: #5ec450;
-    color: #fff;
-}
-
-.tile-progress {
-    background-color: #303641;
+.tile-progress.tile-green {
+    background-color: #00a65b;
     color: #fff;
 }
 
 .tile-progress.tile-blue {
-    background-color: #0073b7;
+    background-color: #5d63bf;
     color: #fff;
 }
-
-.tile-progress.tile-aqua {
-    background-color: #00c0ef;
-    color: #fff;
-}
-
-.tile-progress.tile-green {
-    background-color: #00a65a;
-    color: #fff;
-}
-
-.tile-progress.tile-cyan {
-    background-color: #00b29e;
-    color: #fff;
-}
-
-.tile-progress.tile-purple {
-    background-color: #ba79cb;
-    color: #fff;
-}
-
-.tile-progress.tile-pink {
-    background-color: #ec3b83;
-    color: #fff;
-}
-
-
-
-
 
 
 
@@ -943,39 +917,21 @@ section p span {
 /* #####    Perosnal Projekts   #####*/
 /* ##################################*/
 
-/* Work Box */
-.projektContainer {
-    position: absolute;
-    width: 20%;
-    flex-wrap: nowrap;
-    left: 40%;
-    bottom: 12%;
-    border-radius: 5px;
-    height: 20%;
-    z-index: 50;
-    transition: 0.3s;
-}
-
-.projektContainer:hover {
-    left: 38.5%;
-    bottom: 15%;
-}
-
-.home-container-projekts {
-    position: absolute;
-    left: 40%;
-    bottom: 11%;
-    width: 20%;
-    z-index: -1;
-    height: 20%;
-    background: repeating-linear-gradient(-45deg,
-            #EFF9F0,
-            #EFF9F0 10px,
-            transparent 10px,
-            transparent 30px);
+/* Hero */
+.work-hero{
+    margin-top: 5%;
+    width: 100% !important;
+    height: 80vh;
 }
 
 /* Shapes */
+.work-shape-hero-background {
+position: absolute;
+top: 0;
+right: 0;
+z-index: -1;
+}
+
 .work-shape-top-left {
     position: absolute;
     top: 5%;
@@ -1516,4 +1472,44 @@ article .card-info .laptop-svg,
     -ms-transform: rotate(+45deg);
     -o-transform: rotate(+45deg);
     transform: rotate(+45deg);
+}
+
+
+
+
+
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* HOME PAGE*/
+/* Work Box */
+.projektContainer {
+    position: absolute;
+    width: 20%;
+    flex-wrap: nowrap;
+    left: 40%;
+    bottom: 12%;
+    border-radius: 5px;
+    height: 20%;
+    z-index: 50;
+    transition: 0.3s;
+}
+
+.projektContainer:hover {
+    left: 38.5%;
+    bottom: 15%;
+}
+
+.home-container-projekts {
+    position: absolute;
+    left: 40%;
+    bottom: 11%;
+    width: 20%;
+    z-index: -1;
+    height: 20%;
+    background: repeating-linear-gradient(-45deg,
+            #EFF9F0,
+            #EFF9F0 10px,
+            transparent 10px,
+            transparent 30px);
 }
