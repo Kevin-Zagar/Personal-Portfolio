@@ -8,7 +8,7 @@ const contact = document.querySelector("#contact");
 const phone = document.querySelector("#phone");
 const headline = document.querySelector(".headline");
 
-// First Sliding Effekt in the homepage areo
+// Sliding Effekt when the about page is being i
 var sliderOne = $(".slider-one");
 var sliderTwo = $(".slider-two");
 var sliderThree = $(".slider-three");
@@ -20,7 +20,7 @@ tl.fromTo(hero, 1, {
   }, {
     height: "90%",
     ease: Power2.easeInOut
-  })
+  }) 
   .fromTo(hero, 1, {
     width: "100%"
   }, {

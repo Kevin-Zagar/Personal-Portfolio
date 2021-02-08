@@ -19,7 +19,6 @@ button {
     cursor: pointer;
 }
 
-
 /* Utilities */
 .lighter-text {
     color: #430d82;
@@ -39,11 +38,11 @@ button {
 
 p {
     font-size: 18px;
-    }
-    
-     h1 {
-        font-size: 50px;
-    }
+}
+
+h1 {
+    font-size: 50px;
+}
 
 /* Buttons*/
 .btn-round {
@@ -243,65 +242,80 @@ footer p {
     /*Fix for safari gap*/
     min-height: 100px;
     max-height: 400px;
-  }
-  /* Animation */
-  .parallax>use {
+}
+
+/* Animation */
+.parallax>use {
     animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-  }
-  .parallax>use:nth-child(1) {
+}
+
+.parallax>use:nth-child(1) {
     animation-delay: -2s;
     animation-duration: 7s;
-  }
-  .parallax>use:nth-child(2) {
+}
+
+.parallax>use:nth-child(2) {
     animation-delay: -3s;
     animation-duration: 10s;
-  }
-  .parallax>use:nth-child(3) {
+}
+
+.parallax>use:nth-child(3) {
     animation-delay: -4s;
     animation-duration: 13s;
-  }
-  .parallax>use:nth-child(4) {
+}
+
+.parallax>use:nth-child(4) {
     animation-delay: -5s;
     animation-duration: 20s;
-  }
-  @keyframes move-forever {
+}
+
+@keyframes move-forever {
     0% {
-      transform: translate3d(-90px, 0, 0);
+        transform: translate3d(-90px, 0, 0);
     }
+
     100% {
-      transform: translate3d(85px, 0, 0);
+        transform: translate3d(85px, 0, 0);
     }
-  }
-  /*Shrinking for mobile*/
-  @media (max-width: 768px) {
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
     .waves {
-      height: 40px;
-      min-height: 40px;
+        height: 45px;
+        min-height: 45px;
     }
+
     .content {
-      height: 30vh;
+        height: 35vh;
     }
-  }
-  
-  /*Other*/
-  .unique-color-dark {
+
+    .footer-copyright {
+        height: 100px;
+        background-color: #7289DA;
+    }
+}
+
+/*Other*/
+.unique-color-dark {
     background-color: #7289da !important;
-  }
-  
-  .bg-light {
+}
+
+.bg-light {
     background-color: #7289DA !important;
-  }
-  
-  .navbar-brand {
+}
+
+.navbar-brand {
     color: white;
-  }
-  
-  .custom-color {
+}
+
+.custom-color {
     background-color: #7289DA !important
-  }
+}
 
 
 /* Slider transition */
+/* About */
 .slider-one {
     position: absolute;
     top: 0;
@@ -309,7 +323,7 @@ footer p {
     width: 0%;
     height: 100%;
     border-radius: 10px;
-    background: #494949;
+    background: #97c58e;
     z-index: 100;
 }
 
@@ -320,7 +334,7 @@ footer p {
     width: 0%;
     height: 100%;
     border-radius: 10px;
-    background: rgb(170, 170, 170);
+    background: rgb(203, 225, 185);
     z-index: 100;
 }
 
@@ -463,160 +477,15 @@ footer p {
     animation: ani-mouse 2.5s linear infinite;
 }
 
+/* Hide the scroll btn on Phones=*/
+@media only screen and (max-width: 600px) {
+    .scroll-btn {
+        visibility: hidden;
+    }
+}
 
 /* --- Homepage ---*/
 /* Full Home Background */
-.background-home {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #242424;
-    z-index: -50;
-}
-
-.color-gradient-one {
-    background: rgb(246, 19, 61);
-    background: linear-gradient(60deg, rgba(246, 19, 61, 1) 0%, rgba(249, 94, 65, 1) 46%, rgba(252, 176, 69, 1) 100%);
-}
-
-.gradient-home-box {
-    height: 20px;
-    width: 20px;
-    border-radius: 5px;
-}
-
-
-.home-shape-hero {
-    position: absolute;
-    top: 0vh;
-    
-}
-
-.hero-container {
-    width: 100vh;
-    height: 100vh;
-}
-/* Hero Home */
-.header-home {
-    padding-top: 10%;
-}
-
-#homeHeader {
-    font-size: 80px;
-}
-
-/* Typing Effekt: It creates the white line */
-.txt-type>.txt {
-    border-right: 0.2rem solid #EFF9F0;
-}
-
-/* Shapes on the Home Page*/
-.striped-container {
-    position: absolute;
-    background: repeating-linear-gradient(-45deg,
-            #EFF9F0,
-            #EFF9F0 10px,
-            transparent 10px,
-            transparent 30px);
-}
-
-.colored-shape1 {
-    position: absolute;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-
-    background: rgb(246, 19, 61);
-    background: linear-gradient(40deg, rgba(246, 19, 61, 0.27494747899159666) 0%, rgba(249, 94, 65, 0.3701855742296919) 50%, rgba(252, 176, 69, 1) 100%);
-}
-
-.colored-shape1 {
-    position: absolute;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-
-    background: rgb(246, 19, 61);
-    background: linear-gradient(40deg, rgba(246, 19, 61, 0.27494747899159666) 0%, rgba(249, 94, 65, 0.3701855742296919) 50%, rgba(252, 176, 69, 1) 100%);
-}
-
-.colored-shape2 {
-    position: absolute;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-
-    background: rgb(246, 19, 61);
-    background: linear-gradient(60deg, rgba(246, 19, 61, 0.4318102240896359) 46%, rgba(249, 94, 65, 0.5606617647058824) 64%, rgba(252, 176, 69, 1) 100%);
-}
-
-.shape1 {
-    width: 20%;
-    height: 3%;
-    right: 50%;
-    top: 52%;
-    border-radius: 5px;
-}
-
-.shape2 {
-    width: 4%;
-    height: 30%;
-    left: 0;
-    bottom: 40%;
-    border-radius: 5px;
-}
-
-.shape3 {
-    right: 30%;
-    top: 33%;
-}
-
-.shape4 {
-    right: 26%;
-    top: 28%;
-}
-
-.shape5 {
-    position: absolute;
-    top: 90%;
-    left: 10%;
-    z-index: -5;
-    filter: blur(1rem);
-}
-
-.shape6 {
-    position: absolute;
-    bottom: 0;
-    z-index: -4;
-
-}
-
-.shape7 {
-    position: absolute;
-    bottom: 0;
-    z-index: -3;
-}
-
-.shape8 {
-    position: absolute;
-    bottom: 0;
-    z-index: -2;
-}
-
-.shape9 {
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-}
-
-.shape10 {
-    position: absolute;
-    bottom: 0;
-    z-index: 0;
-}
-
 
 
 
@@ -625,69 +494,17 @@ footer p {
 /* #####        About Page      #####*/
 /* ##################################*/
 
-/* Utilities About Page */
-
-
-/* About Box */
-.aboutContainer {
-    position: absolute;
-    width: 20%;
-    height: 20%;
-    flex-wrap: nowrap;
-    left: 12%;
-    bottom: 12%;
-    border-radius: 5px;
-    background: #242424;
-    z-index: 50;
-    transition: 0.3s;
-    border: 20px;
-    border-color: #EFF9F0;
-}
-
-.aboutContainer:hover {
-    left: 10.5%;
-    bottom: 15%;
-}
-
-.home-container-about {
-    position: absolute;
-    left: 12%;
-    bottom: 11%;
-    width: 20%;
-    z-index: -1;
-    height: 20%;
-    background: repeating-linear-gradient(-45deg,
-            #EFF9F0,
-            #EFF9F0 10px,
-            transparent 10px,
-            transparent 30px);
-}
-
-/* Transition and Hero Part */
-
 /* --- Hero Section for About Page --- */
-.about-hero{
+.about-hero {
     margin-top: 10vh;
     width: 100% !important;
     height: 80vh;
-  }
-  
-  .about-hero-img {
-    width: 40%;
+}
+
+.about-hero-img {
     height: 70%;
     object-fit: cover;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .about-hero-img {
-      width: 80%;
-      height: 50%;
-    }
-  
-    .about-hero {
-      height: auto;
-    }
-  }
+}
 
 
 /* #################
@@ -699,16 +516,16 @@ section .about-shape-hero-background {
     top: 8%;
     right: -5%;
     z-index: -1;
-    width: 100%; 
+    width: 100%;
     height: 100%;
 }
 
-section .about-shape-hero-left-plant{
+section .about-shape-hero-left-plant {
     position: absolute;
     top: 3%;
     right: 32.5%;
     z-index: 1;
-    width: 80%; 
+    width: 80%;
     height: 80%;
 }
 
@@ -717,7 +534,7 @@ section .about-shape-hero-laptop {
     top: 80%;
     right: 58%;
     z-index: 2;
-    width: 20%; 
+    width: 20%;
     height: 20%;
 }
 
@@ -726,35 +543,18 @@ section .about-shape-hero-bag {
     top: 80%;
     right: 25%;
     z-index: 3;
-    width: 20%; 
+    width: 20%;
     height: 20%;
 }
+
 
 section .about-shape-hero-bag-plant {
     position: absolute;
     top: 63%;
     right: 19%;
     z-index: 2;
-    width: 20%; 
+    width: 20%;
     height: 20%;
-}
-
-section .about-shape-hero-palm {
-    position: absolute;
-    top: -15%;
-    right: -15%;
-    z-index: 1;
-    width: 80%; 
-    height: 95%;
-}
-
-section .about-shape-hero-whitespace{
-    position: absolute;
-    top: 50%;
-    right: -35%;
-    z-index: 1;
-    width: 100%; 
-    height: 100%;
 }
 
 section .about-shape-hero-palmleaf {
@@ -762,7 +562,7 @@ section .about-shape-hero-palmleaf {
     top: 0%;
     right: 5%;
     z-index: 1;
-    width: 40%; 
+    width: 40%;
     height: 40%;
 }
 
@@ -770,7 +570,7 @@ section .about-shape-left-hanging-plant {
     position: absolute;
     top: -5%;
     left: -1%;
-    z-index: 1;
+    z-index: -1;
 }
 
 .about-shape-palmleaf {
@@ -798,32 +598,31 @@ section .about-shape-left-hanging-plant {
 /* About mme Page: Who Am I - Section  */
 section p span {
     font-size: 50px;
-    font-weight: bold;  
+    font-weight: bold;
 }
 
-.info-about-me{
+.info-about-me {
     margin-top: 20vh;
     width: 100%;
-    height: 70vh;
-  }
+    height: 100%;
+}
 
 .parallax {
-  /* The image used */
-  background-image: url("https://images.pexels.com/photos/1534172/pexels-photo-1534172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    /* The image used */
+    background-image: url("https://images.pexels.com/photos/1534172/pexels-photo-1534172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 
-  /* Set a specific height */
-  height: 100%; 
+    /* Set a specific height */
+    height: 60vh;
     width: 200px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: -580px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -580px;
 }
 
 /* About Page: Section C: Progress Bars  */
-
 .about-progressbars-maegin-top {
     margin-top: 35vh;
 }
@@ -846,7 +645,6 @@ section p span {
 }
 
 .tile-progress {
-
     color: #fff;
     margin-bottom: 20px;
     -webkit-border-radius: 5px;
@@ -911,6 +709,100 @@ section p span {
     color: #fff;
 }
 
+/* For Phones */
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .about-hero-info-remove-padding-phone {
+        padding: 0px !important;
+        margin-left: 15px;
+        margin-right: 40px;
+    }
+
+    /* About Page: Hero */
+    .about-hero-img {
+        width: 60%;
+    }
+
+    .about-hero {
+        height: auto;
+    }
+
+    /* About Page: Shapes */
+    section .about-shape-hero-background {
+        width: 120%;
+        height: 120%;
+        right: -15%;
+    }
+
+    .about-shape-left-hanging-plant {
+        opacity: 0.2;
+    }
+
+    section .about-shape-hero-left-plant {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: -28%;
+    }
+
+    section .about-shape-hero-laptop {
+        top: 85%;
+        left: 10%;
+        z-index: 2;
+        width: 35%;
+        height: 35%;
+    }
+
+    section .about-shape-hero-bag {
+        width: 40%;
+        height: 40%;
+        top: 80%;
+        right: 8%;
+    }
+
+    section .about-shape-hero-bag-plant {
+        width: 40% !important;
+        height: 40% !important;
+        right: 2% !important;
+        top: 50% !important;
+    }
+
+    section .about-shape-hero-palmleaf {
+        width: 50%;
+      height: 50%;
+      top: -5%;
+        right: -3%;
+    }
+
+   
+    .parallax {
+        /* The image used */
+        background-image: url("https://images.pexels.com/photos/1534172/pexels-photo-1534172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    
+        /* Set a specific height */
+        height: 120vh;
+        width: 50px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+    
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -580px;
+    }
+
+    .about-shape-bottom-plant {
+        position: absolute;
+        top: 380%;
+        right: -100px;
+        z-index: -1;
+    }
+    
+
+}/* MOBILE VERSION END */
 
 
 /* ##################################*/
@@ -918,7 +810,7 @@ section p span {
 /* ##################################*/
 
 /* Hero */
-.work-hero{
+.work-hero {
     margin-top: 5%;
     width: 100% !important;
     height: 80vh;
@@ -926,10 +818,10 @@ section p span {
 
 /* Shapes */
 .work-shape-hero-background {
-position: absolute;
-top: 0;
-right: 0;
-z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .work-shape-top-left {
@@ -975,7 +867,7 @@ z-index: -1;
     position: absolute;
     top: 400%;
     left: 20%;
-    
+
     z-index: 50;
 }
 
@@ -1483,6 +1375,10 @@ article .card-info .laptop-svg,
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* HOME PAGE*/
 /* Work Box */
+#homepage-overflow-y {
+    overflow-y: hidden;
+}
+
 .projektContainer {
     position: absolute;
     width: 20%;
@@ -1512,4 +1408,158 @@ article .card-info .laptop-svg,
             #EFF9F0 10px,
             transparent 10px,
             transparent 30px);
+}
+
+.background-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background: #242424;
+    z-index: -50;
+}
+
+.color-gradient-one {
+    background: rgb(246, 19, 61);
+    background: linear-gradient(60deg, rgba(246, 19, 61, 1) 0%, rgba(249, 94, 65, 1) 46%, rgba(252, 176, 69, 1) 100%);
+}
+
+.gradient-home-box {
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+}
+
+
+
+.hero-container {
+    width: 100vh;
+    height: 100vh;
+}
+
+/* Hero Home */
+.header-home {
+    margin-top: 75vh;
+}
+
+#homeHeader {
+    font-size: 50px
+}
+
+/* Typing Effekt: It creates the white line */
+.txt-type>.txt {
+    border-right: 0.2rem solid #EFF9F0;
+}
+
+
+/* Shapes on the Home Page*/
+.home-shape-hero {
+    position: absolute;
+    top: -25vh;
+
+}
+
+.striped-container {
+    position: absolute;
+    background: repeating-linear-gradient(-45deg,
+            #EFF9F0,
+            #EFF9F0 10px,
+            transparent 10px,
+            transparent 30px);
+}
+
+.colored-shape1 {
+    position: absolute;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+    background: rgb(246, 19, 61);
+    background: linear-gradient(40deg, rgba(246, 19, 61, 0.27494747899159666) 0%, rgba(249, 94, 65, 0.3701855742296919) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.colored-shape1 {
+    position: absolute;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+    background: rgb(246, 19, 61);
+    background: linear-gradient(40deg, rgba(246, 19, 61, 0.27494747899159666) 0%, rgba(249, 94, 65, 0.3701855742296919) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.colored-shape2 {
+    position: absolute;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+
+    background: rgb(246, 19, 61);
+    background: linear-gradient(60deg, rgba(246, 19, 61, 0.4318102240896359) 46%, rgba(249, 94, 65, 0.5606617647058824) 64%, rgba(252, 176, 69, 1) 100%);
+}
+
+.shape1 {
+    width: 20%;
+    height: 3%;
+    right: 50%;
+    top: 52%;
+    border-radius: 5px;
+}
+
+.shape2 {
+    width: 4%;
+    height: 30%;
+    left: 0;
+    bottom: 40%;
+    border-radius: 5px;
+}
+
+.shape3 {
+    right: 30%;
+    top: 33%;
+}
+
+.shape4 {
+    right: 26%;
+    top: 28%;
+}
+
+.shape5 {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    z-index: -5;
+    filter: blur(1rem);
+}
+
+.shape6 {
+    position: absolute;
+    bottom: 0;
+    z-index: -4;
+
+}
+
+.shape7 {
+    position: absolute;
+    bottom: 0;
+    z-index: -3;
+}
+
+.shape8 {
+    position: absolute;
+    bottom: 0;
+    z-index: -2;
+}
+
+.shape9 {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.shape10 {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
 }
