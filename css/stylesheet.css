@@ -160,13 +160,7 @@ nav {
 
 /* mobile view */
 @media (max-width:500px) {
-    .navbar-nav {
-        background-color: #000;
-        border-top: 3px solid #fed136;
-        color: #fff;
-        z-index: 1;
-        margin-top: 5px;
-    }
+
 
     .navbar-nav .nav-item .nav-link {
         padding: 0.7em 1em !important;
@@ -191,6 +185,16 @@ nav {
         margin-bottom: 40px;
     }
 
+    .nav-phone {
+        visibility: hidden;
+    }
+
+    .navbar {
+        background-color: #EFF9F0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    }
+
 }
 
 @media (max-width:768px) {
@@ -204,6 +208,16 @@ nav {
         line-height: 23px;
         margin-bottom: 40px;
     }
+
+    .nav-phone {
+        visibility: hidden;
+    }
+
+    .navbar {
+        background-color: #EFF9F0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
 }
 
 .nav-phone {
@@ -316,14 +330,13 @@ footer p {
 
 /* Slider transition */
 /* About */
-.slider-one {
+.slider-one  {
     position: absolute;
     top: 0;
     left: 0;
     width: 0%;
     height: 100%;
     border-radius: 10px;
-    background: #97c58e;
     z-index: 100;
 }
 
@@ -334,7 +347,6 @@ footer p {
     width: 0%;
     height: 100%;
     border-radius: 10px;
-    background: rgb(203, 225, 185);
     z-index: 100;
 }
 
@@ -345,7 +357,6 @@ footer p {
     width: 0%;
     height: 100%;
     border-radius: 10px;
-    background: #EFF9F0;
     z-index: 100;
 }
 
@@ -1277,7 +1288,12 @@ article .card-info .laptop-svg,
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* HOME PAGE*/
-/* Work Box */
+
+/* Home Page: Phone Version */
+@media only screen and (max-width: 600px) {
+  
+}
+
 #homepage-overflow-y {
     overflow-y: hidden;
 }
@@ -1294,13 +1310,13 @@ article .card-info .laptop-svg,
 
 /* Hero Home */
 .header-home {
-    margin-top: 75vh;
+    margin-top: 70vh;
 }
 
 /* Shapes on the Home Page*/
 .home-shape-hero {
     position: absolute;
-    top: -25vh;
+    top: -12.5vh;
 }
 
 #homeHeader {

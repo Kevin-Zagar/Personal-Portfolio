@@ -79,11 +79,48 @@ tl.fromTo(hero, 1, {
   }, "-=0.1");
 
 
+// Open Contact Page Animation 
+$(".openHomePage").click(function () {
+  // Get the Page full height
+  var pageHeight = $(document).height();
+  // Changing the slider height
+  sliderOne.height(pageHeight);
+  sliderTwo.height(pageHeight);
+  sliderThree.height(pageHeight);
+  // Changing the color of the slider
+  sliderOne.css("background-color", "#282828");
+  sliderTwo.css("background-color", "#767676");
+  sliderThree.css("background-color", "#EFF9F0");
+  // Animation Starts Here...
+  sliderOne.animate({
+    width: "100%",
+    left: 0
+  }); 
+  sliderTwo.delay(100).animate({
+    width: "100%",
+    left: 0
+  });
+  sliderThree.delay(200).animate({
+      width: "100%",
+      left: 0
+    }, function () {
+      window.location.href = 'index.html';
+    });
+});
 
 
 // Open About Page Animation 
 $(".openAboutPage").click(function () {
+    // Get the Page full height
+    var pageHeight = $(document).height();
+    // Changing the slider height
+    sliderOne.height(pageHeight);
+    sliderTwo.height(pageHeight);
+    sliderThree.height(pageHeight);
   // Animation Starts Here...
+  sliderOne.css("background-color", "#97c58e");
+  sliderTwo.css("background-color", "rgb(203, 225, 185)");
+  sliderThree.css("background-color", "#EFF9F0");
   sliderOne.animate({
     width: "100%",
     left: 0
@@ -104,6 +141,16 @@ $(".openAboutPage").click(function () {
 
 // Open Work Page Animation 
 $(".openWorkPage").click(function () {
+    // Get the Page full height
+    var pageHeight = $(document).height();
+    // Changing the slider height
+    sliderOne.height(pageHeight);
+    sliderTwo.height(pageHeight);
+    sliderThree.height(pageHeight);
+  // Changing the color of the slider
+  sliderOne.css("background-color", "#CA96F9");
+  sliderTwo.css("background-color", "rgb(223, 205, 243)");
+  sliderThree.css("background-color", "#EFF9F0");
   // Animation Starts Here...
   sliderOne.animate({
     width: "100%",
@@ -118,5 +165,34 @@ $(".openWorkPage").click(function () {
       left: 0
     }, function () {
       window.location.href = 'work.html';
+    });
+});
+
+// Open Contact Page Animation 
+$(".openContactPage").click(function () {
+      // Get the Page full height
+      var pageHeight = $(document).height();
+      // Changing the slider height
+      sliderOne.height(pageHeight);
+      sliderTwo.height(pageHeight);
+      sliderThree.height(pageHeight);
+  // Changing the color of the slider
+  sliderOne.css("background-color", "#282828");
+  sliderTwo.css("background-color", "#767676");
+  sliderThree.css("background-color", "#EFF9F0");
+  // Animation Starts Here...
+  sliderOne.animate({
+    width: "100%",
+    left: 0
+  }); 
+  sliderTwo.delay(100).animate({
+    width: "100%",
+    left: 0
+  });
+  sliderThree.delay(200).animate({
+      width: "100%",
+      left: 0
+    }, function () {
+      window.location.href = 'contact.html';
     });
 });
