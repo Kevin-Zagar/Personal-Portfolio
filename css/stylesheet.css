@@ -95,6 +95,8 @@ h1 {
 
 /* Navbar */
 /* Get the navbar behind the slider-home*/
+
+
 .navbar-brand span {
     color: #ffa600;
     font-size: 25px;
@@ -115,9 +117,19 @@ h1 {
     font-size: 120%;
     font-weight: 500;
     letter-spacing: 1px;
-    color: black;
+    /* TODO Color pacing*/
+    color: rgb(255, 255, 255);
     font-family: 'Gothic A1', sans-serif;
 
+}
+
+/* Color sheme */
+.nav-link {
+    color: black !important;
+}
+
+.disabled {
+    color: gray !important;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -162,6 +174,7 @@ nav {
 @media (max-width:500px) {
 
 
+
     .navbar-nav .nav-item .nav-link {
         padding: 0.7em 1em !important;
         font-size: 100%;
@@ -192,7 +205,7 @@ nav {
     .navbar {
         background-color: #EFF9F0;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
+
     }
 
 }
@@ -306,9 +319,10 @@ footer p {
 
     .footer-copyright {
         height: 100px;
-        background-color: #7289DA;
+        background-color: #c1ccf5;
     }
 }
+
 
 /*Other*/
 .unique-color-dark {
@@ -328,9 +342,10 @@ footer p {
 }
 
 
+
 /* Slider transition */
 /* About */
-.slider-one  {
+.slider-one {
     position: absolute;
     top: 0;
     left: 0;
@@ -740,6 +755,13 @@ section p span {
     z-index: -1;
 }
 
+.work-shape-hero-only-background-color,
+.work-svg-hero-backround-phone-version {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+
 .work-shape-top-left {
     position: absolute;
     top: 5%;
@@ -1144,39 +1166,12 @@ article .card-info .laptop-svg,
     opacity: 0.7;
     margin: 0;
 }
-/*  Contact Me */
 
-/*  Contact Box */
-.contactContainer {
-    position: absolute;
-    width: 20%;
-    flex-wrap: nowrap;
-    left: 68.5%;
-    bottom: 12%;
-    border-radius: 5px;
-    height: 20%;
-    z-index: 50;
-    transition: 0.3s;
-}
 
-.contactContainer:hover {
-    left: 67%;
-    bottom: 15%;
-}
+/* ##################################*/
+/* #####      Contact Page      #####*/
+/* ##################################*/
 
-.home-container-contact {
-    position: absolute;
-    left: 68.5%;
-    bottom: 11%;
-    width: 20%;
-    z-index: -1;
-    height: 20%;
-    background: repeating-linear-gradient(-45deg,
-            #EFF9F0,
-            #EFF9F0 10px,
-            transparent 10px,
-            transparent 30px);
-}
 
 .slider-contact {
     position: absolute;
@@ -1188,10 +1183,14 @@ article .card-info .laptop-svg,
     z-index: -1;
 }
 
-.info-contact {
-    position: absolute;
-    left: 15.5%;
-    top: 20vh;
+.get-in-touch-info-container {
+    width: 25%;
+    padding-top: 20vh;
+    margin-left: 30vh;
+}
+
+.get-in-touch-info-container p {
+    font-size: 15px;
 }
 
 /* Contact Card */
@@ -1214,10 +1213,7 @@ article .card-info .laptop-svg,
     margin-top: 10px
 }
 
-.contact-info-icons {
-    top: 5vh;
-    left: -350px;
-}
+
 
 .btn-success {
     color: #fff;
@@ -1239,48 +1235,56 @@ article .card-info .laptop-svg,
     box-shadow: 0 0 0 1px rgb(255, 255, 255)
 }
 
-.diamond {
-    width: 75px;
-    height: 75px;
-    background: transparent;
-    border: solid #EFF9F0;
-
-    /* Rotate */
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    /* Rotate Origin */
-    -webkit-transform-origin: 0 100%;
-    -moz-transform-origin: 0 100%;
-    -ms-transform-origin: 0 100%;
-    -o-transform-origin: 0 100%;
-    transform-origin: 0 100%;
+.contact-svg {
+    position: absolute;
+    width: 60vh;
+    height: 50vh;
+    bottom: 0vh;
+    left: 15%;
 }
 
-.fa-envelope {
-    -webkit-transform: rotate(+45deg);
-    -moz-transform: rotate(+45deg);
-    -ms-transform: rotate(+45deg);
-    -o-transform: rotate(+45deg);
-    transform: rotate(+45deg);
+.footer-copyright {
+
+    background-color: rgb(118, 118, 220);
 }
 
-.icon-In-Diamond {
-    padding-left: 25px;
-    padding-top: 10px;
+.contact-page .footer-copyright {
+    position: absolute;
+    bottom: 0vh;
+   
+    width: 100%;
 }
 
-.fa-address-card {
-    -webkit-transform: rotate(+45deg);
-    -moz-transform: rotate(+45deg);
-    -ms-transform: rotate(+45deg);
-    -o-transform: rotate(+45deg);
-    transform: rotate(+45deg);
+@media only screen and (max-width: 600px) {
+    .get-in-touch-info-container {
+        padding-top: 50px;
+        width: 80%;
+        margin-left: 5vh;
+    }
+
+    .card-contact {
+        width: 100%;
+        right: 0%;
+        top: 60vh;
+
+        border-radius: 6px;
+    }
+
+    .contact-svg {
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        bottom: -65vh;
+        left: 0vh;
+    }
+
+    .contact-page .footer-copyright {
+        position: absolute;
+        bottom: -70vh;
+        height: 10vh;
+        width: 100%;
+    }
 }
-
-
 
 
 
@@ -1290,9 +1294,7 @@ article .card-info .laptop-svg,
 /* HOME PAGE*/
 
 /* Home Page: Phone Version */
-@media only screen and (max-width: 600px) {
-  
-}
+
 
 #homepage-overflow-y {
     overflow-y: hidden;
@@ -1325,7 +1327,7 @@ article .card-info .laptop-svg,
 
 /* Typing Effekt: It creates the white line */
 .txt-type>.txt {
-    border-right: 0.2rem solid #EFF9F0;
+    border-right: 0.2rem solid #3e1364;
 }
 
 
@@ -1339,137 +1341,142 @@ article .card-info .laptop-svg,
         width: 100%;
     }
 
-    .about-hero-info-remove-padding-phone {
-        padding: 0px !important;
-        margin-left: 15px;
-        margin-right: 40px;
+        .about-hero-info-remove-padding-phone {
+            padding: 0px !important;
+            margin-left: 15px;
+            margin-right: 40px;
+        }
+
+        /* About Page: Hero */
+        .about-hero-img {
+            width: 60%;
+        }
+
+        .about-hero {
+            height: auto;
+        }
+
+        /* About Page: Shapes */
+        section .about-shape-hero-background {
+            width: 120%;
+            height: 120%;
+            right: -15%;
+        }
+
+        .about-shape-left-hanging-plant {
+            opacity: 0.2;
+        }
+
+        section .about-shape-hero-left-plant {
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            left: -28%;
+        }
+
+        section .about-shape-hero-laptop {
+            top: 85%;
+            left: 10%;
+            z-index: 2;
+            width: 35%;
+            height: 35%;
+        }
+
+        section .about-shape-hero-bag {
+            width: 40%;
+            height: 40%;
+            top: 80%;
+            right: 8%;
+        }
+
+        section .about-shape-hero-bag-plant {
+            width: 40% !important;
+            height: 40% !important;
+            right: 2% !important;
+            top: 50% !important;
+        }
+
+        section .about-shape-hero-palmleaf {
+            width: 50%;
+            height: 50%;
+            top: -5%;
+            right: -3%;
+        }
+
+
+        .parallax {
+            /* The image used */
+            background-image: url("https://images.pexels.com/photos/1534172/pexels-photo-1534172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+            /* Set a specific height */
+            height: 120vh;
+            width: 50px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -580px;
+        }
+
+        .about-shape-bottom-plant {
+            position: absolute;
+            top: 380%;
+            right: -100px;
+            z-index: -1;
+        }
+
+
     }
 
-    /* About Page: Hero */
-    .about-hero-img {
-        width: 60%;
+    /* About MOBILE VERSION END */
+
+
+    /* WORK PAGE Phone Responsive */
+    @media only screen and (max-width: 600px) {
+        .work-shape-hero-background {
+            visibility: hidden;
+        }
+
+        .work-shape-hero-only-background-color {
+            visibility: visible;
+            position: absolute;
+            width: 100vh;
+            height: 100%;
+            top: 0%;
+            right: -20vh;
+            z-index: -100;
+        }
+
+        .work-svg-hero-backround-phone-version {
+            visibility: visible !important;
+            position: absolute;
+            width: 100vh;
+            height: 55vh;
+            top: 55vh;
+            right: -60%;
+            z-index: -100;
+        }
+
+        .work-shape-top-left {
+            visibility: hidden;
+        }
+
+        .work-hero p {
+            font-size: 15px;
+        }
+
+        .work-section-info p {
+            font-size: 15px;
+        }
+
+        .work-shape-bottem-left-grid {
+            visibility: hidden;
+        }
+
+        .items {
+            grid-template-columns: 1fr;
+        }
     }
 
-    .about-hero {
-        height: auto;
-    }
-
-    /* About Page: Shapes */
-    section .about-shape-hero-background {
-        width: 120%;
-        height: 120%;
-        right: -15%;
-    }
-
-    .about-shape-left-hanging-plant {
-        opacity: 0.2;
-    }
-
-    section .about-shape-hero-left-plant {
-        width: 100%;
-        height: 100%;
-        top: 0%;
-        left: -28%;
-    }
-
-    section .about-shape-hero-laptop {
-        top: 85%;
-        left: 10%;
-        z-index: 2;
-        width: 35%;
-        height: 35%;
-    }
-
-    section .about-shape-hero-bag {
-        width: 40%;
-        height: 40%;
-        top: 80%;
-        right: 8%;
-    }
-
-    section .about-shape-hero-bag-plant {
-        width: 40% !important;
-        height: 40% !important;
-        right: 2% !important;
-        top: 50% !important;
-    }
-
-    section .about-shape-hero-palmleaf {
-        width: 50%;
-        height: 50%;
-        top: -5%;
-        right: -3%;
-    }
-
-
-    .parallax {
-        /* The image used */
-        background-image: url("https://images.pexels.com/photos/1534172/pexels-photo-1534172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-
-        /* Set a specific height */
-        height: 120vh;
-        width: 50px;
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: -580px;
-    }
-
-    .about-shape-bottom-plant {
-        position: absolute;
-        top: 380%;
-        right: -100px;
-        z-index: -1;
-    }
-
-
-}/* About MOBILE VERSION END */
-
-
-/* WORK PAGE Phone Responsive */
-@media only screen and (max-width: 600px) {
-    .work-shape-hero-background {
-        visibility: hidden;
-    }
-
-    .work-shape-hero-only-background-color {
-        position: absolute;
-        width: 100vh;
-        height: 100%;
-        top: 0%;
-        right: -20vh;
-        z-index: -100;
-    }
-
-    .work-svg-hero-backround-phone-version {
-        visibility: visible !important;
-        position: absolute;
-        width: 100vh;
-        height: 55vh;
-        top: 55vh;
-        right: -60%;
-        z-index: -100;
-    }
-
-    .work-shape-top-left {
-        visibility: hidden;
-    }
-
-    .work-hero p {
-        font-size: 15px;
-    }
-
-    .work-section-info p {
-        font-size: 15px;
-    }
-
-    .work-shape-bottem-left-grid {
-        visibility: hidden;
-    }
-    
-    .items {
-        grid-template-columns: 1fr;
-    }
-} /* MOBILE VERSION END */
+    /* MOBILE VERSION END */
