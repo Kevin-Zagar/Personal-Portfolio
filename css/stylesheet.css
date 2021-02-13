@@ -242,7 +242,6 @@ nav {
 }
 
 
-
 /* Footer */
 .footer {
     margin-top: 20vh;
@@ -260,6 +259,7 @@ footer p {
     font-size: 20px;
 }
 
+
 /*Waves*/
 .waves {
     position: relative;
@@ -270,6 +270,7 @@ footer p {
     min-height: 100px;
     max-height: 400px;
 }
+
 
 /* Animation */
 .parallax>use {
@@ -306,6 +307,7 @@ footer p {
     }
 }
 
+
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
     .waves {
@@ -321,6 +323,7 @@ footer p {
         height: 100px;
         background-color: #c1ccf5;
     }
+
 }
 
 
@@ -1293,7 +1296,7 @@ article .card-info .laptop-svg,
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* HOME PAGE*/
 
-/* Home Page: Phone Version */
+
 
 
 #homepage-overflow-y {
@@ -1305,29 +1308,99 @@ article .card-info .laptop-svg,
     top: 0;
     left: 0;
     width: 100%;
-    height: 60vh;
-    background: #242424;
+    height: 100%;
+    background: rgb(31,2,80);
+    background: linear-gradient(180deg, rgb(22, 0, 60) 0%, rgba(10,0,37,1) 100%);
     z-index: -50;
 }
 
 /* Hero Home */
 .header-home {
-    margin-top: 70vh;
+    margin-top: 20vh;
+    margin-left: 20vh;
+    color: #EFF9F0;
 }
+
+.header-home h3 {
+    font-size: 100px;
+    letter-spacing:20px;
+    font-family: 'Hammersmith One', sans-serif;;
+}
+
+.orange-stripe {
+    height: 5px;
+    width: 100px;
+    background-color: #fed136;
+}
+
 
 /* Shapes on the Home Page*/
-.home-shape-hero {
-    position: absolute;
-    top: -12.5vh;
+.homepage {
+    overflow: hidden;
 }
 
-#homeHeader {
-    font-size: 50px
+.home-shape-hero {
+    position: absolute;
+    top: -50%;
+    left: -40vh;
+    width: 200%;
+    height: 200vh;
+}
+
+.home-shape-hero-phone-version {
+    position: absolute;
+    top: 0vh;
+    width: 100%;
+    min-width: 350px;
+    height: auto;
+    visibility: hidden;
+    height: 0px;
+}
+
+.home-svg-left-stripes {
+    position: absolute;
+    left: 0px;
+    top: 50vh;
+    width: 10vh;
+    height: auto;
+
+}
+
+/* Home Page: Phone Version */
+@media only screen and (max-width: 600px) {
+    .homepage{
+        overflow: visible;
+    }
+
+    .background-home{
+        height: 60vh;
+    }
+
+    .header-home{
+        margin-top: 180%;
+        color: #3a1e52 !important;
+        margin-left: 0vh;
+    }
+
+    .header-home h3 {
+        font-size: 70px;
+        font-family: 'Hammersmith One', sans-serif;;
+    }
+
+    .home-shape-hero {
+        visibility: hidden;
+        width: 0;
+    }
+
+    .home-shape-hero-phone-version {
+        visibility: visible;
+        height: auto;
+    }
 }
 
 /* Typing Effekt: It creates the white line */
 .txt-type>.txt {
-    border-right: 0.2rem solid #3e1364;
+    border-right: 0.2rem solid #ffffff;
 }
 
 
