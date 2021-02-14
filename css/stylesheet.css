@@ -549,6 +549,15 @@ section .about-shape-hero-background {
     height: 100%;
 }
 
+.about-shape-hero-background-mobile-version {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
 section .about-shape-hero-left-plant {
     position: absolute;
     top: 3%;
@@ -604,9 +613,11 @@ section .about-shape-left-hanging-plant {
 
 .about-shape-palmleaf {
     position: absolute;
-    top: 50%;
-    right: -1100px;
+    top: 100%;
+    right: 0;
     z-index: -1;
+    width: 100%;
+    height: auto;
 
 }
 
@@ -1401,12 +1412,13 @@ article .card-info .laptop-svg,
 /* Typing Effekt: It creates the white line */
 .txt-type>.txt {
     border-right: 0.2rem solid #ffffff;
+    font-size: 30px;
 }
 
 
 
 
-
+/* ABOUT PAGE MOBILE*/
 /* For Phones */
 @media only screen and (max-width: 600px) {
     body {
@@ -1433,7 +1445,11 @@ article .card-info .laptop-svg,
         section .about-shape-hero-background {
             width: 120%;
             height: 120%;
-            right: -15%;
+            left: -10%;
+        }
+
+        .about-shape-hero-background-mobile-version {
+            visibility: visible;
         }
 
         .about-shape-left-hanging-plant {
