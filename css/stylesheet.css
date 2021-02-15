@@ -203,8 +203,6 @@ nav {
     }
 
     .navbar {
-        background-color: #EFF9F0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     }
 
@@ -226,10 +224,7 @@ nav {
         visibility: hidden;
     }
 
-    .navbar {
-        background-color: #EFF9F0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
+ 
 
 }
 
@@ -520,12 +515,12 @@ footer p {
 
 
 /* ##################################*/
-/* #####        About Page      #####*/
+/* #####       About Page       #####*/
 /* ##################################*/
 
 /* --- Hero Section for About Page --- */
 .about-hero {
-    margin-top: 10vh;
+    margin-top: 20vh;
     width: 100% !important;
     height: 80vh;
 }
@@ -555,8 +550,9 @@ section .about-shape-hero-background {
     top: 0;
     width: 100%;
     height: auto;
-    z-index: -1;
+    z-index: -10 ;
 }
+
 
 section .about-shape-hero-left-plant {
     position: absolute;
@@ -1446,6 +1442,8 @@ article .card-info .laptop-svg,
             width: 120%;
             height: 120%;
             left: -10%;
+
+            visibility: hidden;
         }
 
         .about-shape-hero-background-mobile-version {
@@ -1481,15 +1479,12 @@ article .card-info .laptop-svg,
         section .about-shape-hero-bag-plant {
             width: 40% !important;
             height: 40% !important;
-            right: 2% !important;
+            right: 5% !important;
             top: 50% !important;
         }
 
         section .about-shape-hero-palmleaf {
-            width: 50%;
-            height: 50%;
-            top: -5%;
-            right: -3%;
+            visibility: hidden;
         }
 
 
