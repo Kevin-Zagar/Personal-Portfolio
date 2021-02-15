@@ -520,7 +520,7 @@ footer p {
 
 /* --- Hero Section for About Page --- */
 .about-hero {
-    margin-top: 20vh;
+    margin-top: 1vh;
     width: 100% !important;
     height: 80vh;
 }
@@ -533,7 +533,7 @@ footer p {
 
 /* #################
     About Page: Shape
-   #################*/
+   ################# */
 
 section .about-shape-hero-background {
     position: absolute;
@@ -1435,6 +1435,7 @@ article .card-info .laptop-svg,
 
         .about-hero {
             height: auto;
+            margin-top: 16vh;
         }
 
         /* About Page: Shapes */
@@ -1443,7 +1444,7 @@ article .card-info .laptop-svg,
             height: 120%;
             left: -10%;
 
-            visibility: hidden;
+            visibility: collapse;
         }
 
         .about-shape-hero-background-mobile-version {
