@@ -542,6 +542,8 @@ section .about-shape-hero-background {
     z-index: -1;
     width: 100%;
     height: 100%;
+
+    display: block;
 }
 
 .about-shape-hero-background-mobile-version {
@@ -629,6 +631,15 @@ section .about-shape-left-hanging-plant {
     top: 220%;
     right: -100px;
     z-index: -1;
+}
+
+.about-shape-img-background {
+
+    position: absolute;
+    top: 50vh;
+    width: 100%;
+    height: auto;
+    z-index: -1 ;
 }
 
 /* About mme Page: Who Am I - Section  */
@@ -1430,7 +1441,7 @@ article .card-info .laptop-svg,
 
         /* About Page: Hero */
         .about-hero-img {
-            width: 60%;
+            width: 80%;
         }
 
         .about-hero {
@@ -1444,7 +1455,7 @@ article .card-info .laptop-svg,
             height: 120%;
             left: -10%;
 
-            visibility: collapse;
+            display: none;
         }
 
         .about-shape-hero-background-mobile-version {
@@ -1488,6 +1499,22 @@ article .card-info .laptop-svg,
             visibility: hidden;
         }
 
+        .about-shape-bottom-plant {
+            position: absolute;
+            top: 220%;
+            right: 1000px !important;
+            z-index: -1;
+        }
+
+        .about-shape-footer-background {
+            width: 100%;
+            top: 100vh;
+            left: 0;
+        }
+
+        .about-hero-img-mobile-version{
+
+        }
 
         .parallax {
             /* The image used */
