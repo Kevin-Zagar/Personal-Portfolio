@@ -547,10 +547,10 @@ section .about-shape-hero-background {
 }
 
 .about-shape-hero-background-mobile-version {
-    visibility: hidden;
+    visibility: collapse;
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 0%;
     height: auto;
     z-index: -10 ;
 }
@@ -780,7 +780,9 @@ section p span {
 .work-svg-hero-backround-phone-version {
     position: absolute;
     top: 0;
-    visibility: hidden;
+    visibility: collapse;
+    width: 100%;
+    height: auto;
 }
 
 .work-shape-top-left {
@@ -1460,6 +1462,7 @@ article .card-info .laptop-svg,
 
         .about-shape-hero-background-mobile-version {
             visibility: visible;
+            width: 100%;
         }
 
         .about-shape-left-hanging-plant {
