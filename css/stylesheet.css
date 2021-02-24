@@ -531,7 +531,7 @@ footer p {
 .about-me-info-hero-mobile-version {
     background-color: #EFF9F0;
     margin-top: 20vh;
-    height: 138vh;
+    height: auto;
     border-radius: 40px 40px 0 0;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 25px 25px;
     
@@ -1557,9 +1557,9 @@ article .card-info .laptop-svg,
 /* ABOUT PAGE MOBILE*/
 /* For Phones */
 @media only screen and (max-width: 600px) {
-    body {
-        overflow-x: hidden;
-        width: 100%;
+    
+    .browser-version {
+        display: none;
     }
 
     .about-hero-info-remove-padding-phone {
