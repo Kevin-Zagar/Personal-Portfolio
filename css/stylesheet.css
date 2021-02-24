@@ -531,9 +531,10 @@ footer p {
 .about-me-info-hero-mobile-version {
     background-color: #EFF9F0;
     margin-top: 20vh;
-    height: 200vh;
-    border-radius: 40px;
+    height: 138vh;
+    border-radius: 40px 40px 0 0;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 25px 25px;
+    
 }
 
 .about-me-img-mobile {
@@ -731,6 +732,11 @@ section .about-shape-left-hanging-plant {
 
 
 /* About Page: Horizontal Skill Scrolling */
+.skill-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .scrolling-wrapper {
     overflow-x: scroll;
     overflow-y: hidden;
