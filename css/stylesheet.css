@@ -20,7 +20,7 @@ button {
 }
 
 /* Utilities */
-.lighter-text {
+.purple-text {
     color: #430d82;
 }
 
@@ -517,7 +517,7 @@ footer p {
 /* ##################################*/
 
 /* --- Hero Section for About Page --- */
-.about-hero {
+.card-hero {
     margin-top: 1vh;
     width: 100% !important;
     height: 80vh;
@@ -526,6 +526,12 @@ footer p {
 .about-hero-img {
     height: 70%;
     object-fit: cover;
+}
+
+.hero-background-mobile-version {
+    position: absolute;
+    top: 0;
+    visibility: collapse;
 }
 
 
@@ -538,10 +544,6 @@ footer p {
     z-index: 100;
 }
 
-
-.mobile-about-page-version {
- 
-}
 
 .about-me-img-mobile {
     width: 20vh;
@@ -575,7 +577,7 @@ section .about-shape-hero-background {
     display: block;
 }
 
-.about-shape-hero-background-browser-version {
+.hero-background-behind-card  {
     position: absolute;
     top: 0;
     width: 100%;
@@ -583,7 +585,7 @@ section .about-shape-hero-background {
     z-index: -10;
 }
 
-.about-shape-hero-background-mobile-version {
+.background-mobile-version {
     visibility: collapse;
     position: absolute;
     top: 0;
@@ -912,6 +914,22 @@ section p span {
     margin-top: 5%;
     width: 100% !important;
     height: 80vh;
+}
+
+/* Section One: Card After Hero */
+section .work-shape-hero-background {
+    position: absolute;
+    top: 8%;
+    right: -5%;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    display: block;
+}
+
+.mobile-work-page-version{
+    visibility: collapse;
 }
 
 /* Shapes */
@@ -1593,9 +1611,11 @@ article .card-info .laptop-svg,
         margin-right: 40px;
     }
 
-    .mobile-about-page-version {
-      
+    /* Hero Background: Resize for mobile version */
+    .about-shape-hero-background-behind-card {
+        height: 200px;
     }
+
 
     /* Abaout Page: First Section - */
     .about-mobile-after-hero-info {
@@ -1608,10 +1628,22 @@ article .card-info .laptop-svg,
         width: 80%;
     }
 
-    .about-hero {
+    .card-hero {
         height: auto;
         margin-top: 20vh;
+    } 
+    
+    .hero-background-mobile-version {
+        visibility: visible;
+        width: 100%;
+        top: 0;
+        z-index: -1;
     }
+
+    .hero-background-behind-card {
+        display: none;
+    }
+
 
     /* About Page: Shapes */
     section .about-shape-hero-background {
@@ -1622,11 +1654,7 @@ article .card-info .laptop-svg,
         display: none;
     }
 
-    .about-shape-hero-background-mobile-version {
-        visibility: visible;
-        width: 100%;
-    }
-
+   
     .about-shape-left-hanging-plant {
         opacity: 0.2;
     }
