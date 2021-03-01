@@ -917,6 +917,15 @@ section p span {
 }
 
 /* Section One: Card After Hero */
+.work-me-info-hero {
+    background-color: #EFF9F0;
+    margin-top: 25%;
+    height: 100%;
+    border-radius: 40px 40px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 25px 25px;
+    z-index: 100;
+}
+
 section .work-shape-hero-background {
     position: absolute;
     top: 8%;
@@ -929,7 +938,7 @@ section .work-shape-hero-background {
 }
 
 .mobile-work-page-version{
-    visibility: collapse;
+    display: none;
 }
 
 /* Shapes */
