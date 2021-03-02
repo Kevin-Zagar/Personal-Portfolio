@@ -1364,6 +1364,77 @@ article .card-info .laptop-svg,
 }
 
 
+/* Work Page: Mobile CSS */
+
+/* Work Page: Horizontal Scrolling */
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.info-card-horizontal-web-page {
+    flex: 0 0 auto;
+    display: inline-block;
+    width: 22.5vh;
+    height: 25vh;
+
+    background-color: #9e73c4;
+}
+
+.card-horizontal-web-page {
+    flex: 0 0 auto;
+    display: inline-block;
+    width: 30vh;
+    height: 20vh;
+    object-fit: cover;
+
+    background-color: #CA96F9;
+
+}
+
+.card-block{
+
+	height: 27vh;
+	border: none;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.2s ease-in-out !important;
+
+    background-color: #9d71c4;
+}
+
+.img-websites {
+    object-fit: cover;
+    width: 100%
+}
+
+.card-info {
+
+    height: 27vh;
+    
+    background-color: #9d71c4;
+}
+
+.space-between-cards {
+    padding: 3px !important;
+}
+
+
+.scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-icons {
+    font-size: 8vh;
+}
+
 /* ##################################*/
 /* #####      Contact Page      #####*/
 /* ##################################*/
@@ -1610,7 +1681,7 @@ article .card-info .laptop-svg,
         margin-top: 20vh;
     }
     
-    .browser-version {
+    .large-screen-version {
         display: none;
     }
 
