@@ -105,7 +105,7 @@ h1 {
 }
 
 .navbar-brand {
-    color: gray;
+ 
     font-size: 25px;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
     font-weight: 700;
@@ -577,7 +577,7 @@ section .about-shape-hero-background {
     display: block;
 }
 
-.hero-background-behind-card  {
+.hero-background-behind-card {
     position: absolute;
     top: 0;
     width: 100%;
@@ -771,7 +771,7 @@ section .about-shape-left-hanging-plant {
     display: inline-block;
     width: 15vh;
     height: 15vh;
-    
+
 }
 
 .scrolling-wrapper-flexbox {
@@ -937,7 +937,7 @@ section .work-shape-hero-background {
     display: block;
 }
 
-.mobile-work-page-version{
+.mobile-work-page-version {
     display: none;
 }
 
@@ -1379,13 +1379,15 @@ article .card-info .laptop-svg,
     overflow-x: auto;
 }
 
+/* First Card wich holds info of the shown Website*/
 .info-card-horizontal-web-page {
     flex: 0 0 auto;
     display: inline-block;
     width: 22.5vh;
     height: 25vh;
 
-    background-color: #9e73c4;
+    background: rgb(158, 115, 196);
+    background: linear-gradient(150deg, rgba(158, 115, 196, 1) 0%, rgba(211, 176, 212, 1) 100%);
 }
 
 .card-horizontal-web-page {
@@ -1395,19 +1397,33 @@ article .card-info .laptop-svg,
     height: 20vh;
     object-fit: cover;
 
-    background-color: #CA96F9;
+    background: rgb(158, 115, 196);
+    background: linear-gradient(150deg, rgba(158, 115, 196, 1) 0%, rgba(211, 176, 212, 1) 100%);
+}
+
+.card-block {
+    height: 27vh;
+    border: none;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.2s ease-in-out !important;
+
+    background: rgb(158, 115, 196);
+    background: linear-gradient(150deg, rgba(158, 115, 196, 1) 0%, rgba(211, 176, 212, 1) 100%);
 
 }
 
-.card-block{
+.card {
+    padding: 0;
+    border: transparent;
+    background-color: transparent;
+}
 
-	height: 27vh;
-	border: none;
-	background-position: center;
-	background-size: cover;
-	transition: all 0.2s ease-in-out !important;
+/* Card Name Color */
+.card-name {
+    background: rgb(158, 115, 196);
+    background: linear-gradient(150deg, rgba(158, 115, 196, 1) 0%, rgba(211, 176, 212, 1) 100%);
 
-    background-color: #9d71c4;
 }
 
 .img-websites {
@@ -1418,7 +1434,7 @@ article .card-info .laptop-svg,
 .card-info {
 
     height: 27vh;
-    
+
     background-color: #9d71c4;
 }
 
@@ -1680,7 +1696,7 @@ article .card-info .laptop-svg,
     .about-me-info-hero {
         margin-top: 20vh;
     }
-    
+
     .large-screen-version {
         display: none;
     }
@@ -1700,8 +1716,8 @@ article .card-info .laptop-svg,
     /* Abaout Page: First Section - */
     .about-mobile-after-hero-info {
         height: auto;
-    visibility: visible;
-}
+        visibility: visible;
+    }
 
     /* About Page: Hero */
     .about-hero-img {
@@ -1711,8 +1727,8 @@ article .card-info .laptop-svg,
     .card-hero {
         height: auto;
         margin-top: 20vh;
-    } 
-    
+    }
+
     .hero-background-mobile-version {
         visibility: visible;
         width: 100%;
@@ -1734,7 +1750,7 @@ article .card-info .laptop-svg,
         display: none;
     }
 
-   
+
     .about-shape-left-hanging-plant {
         opacity: 0.2;
     }
@@ -1876,63 +1892,63 @@ article .card-info .laptop-svg,
 
 /* FOOTER */
 .footer-basic {
-    padding:40px 0;
-    background-color:#ffffff;
-    color:#4b4c4d;
-  }
-  
-  .footer-basic ul {
-    padding:0;
-    list-style:none;
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:0;
-  }
-  
-  .footer-basic li {
-    padding:0 10px;
-  }
-  
-  .footer-basic ul a {
-    color:inherit;
-    text-decoration:none;
-    opacity:0.8;
-  }
-  
-  .footer-basic ul a:hover {
-    opacity:1;
-  }
-  
-  .footer-basic .social {
-    text-align:center;
-    padding-bottom:25px;
-  }
-  
-  .footer-basic .social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    border:1px solid #ccc;
-    margin:0 8px;
-    color:inherit;
-    opacity:0.75;
-  }
-  
-  .footer-basic .social > a:hover {
-    opacity:0.9;
-  }
-  
-  .footer-basic .copyright {
-    margin-top:15px;
-    text-align:center;
-    font-size:13px;
-    color:#aaa;
-    margin-bottom:0;
-  }
-  
-  /* Credit to https://epicbootstrap.com/snippets/footer-basic */
+    padding: 40px 0;
+    background-color: #ffffff;
+    color: #4b4c4d;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+/* Credit to https://epicbootstrap.com/snippets/footer-basic */
