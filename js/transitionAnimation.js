@@ -14,7 +14,7 @@ var sliderTwo = $(".slider-two");
 var sliderThree = $(".slider-three");
 
 const tl = new TimelineMax();
-
+  
 tl.fromTo(hero, 1, {
     height: "0%"
   }, {

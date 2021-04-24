@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Changed the viewport and added better apple compatibility to prevent horizontal scrolling-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- TODO Get the ekko light box working for personal Projekts -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://kit.fontawesome.com/1d62a1b076.js" crossorigin="anonymous"></script>
+
+
+    <title>Kevin Zagar - Portfolio</title>
+
+</head>
+
+<body class="homepage">
+
+    <div class="slider-one"></div>
+    <div class="slider-two"></div>
+    <div class="slider-three"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top " id="banner">
+        <a id="logo" class="navbar-brand" href="#"><img src="img\logo-black.png" alt="logo" width="60px"></a>
+        <!-- Brand -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center text-md-left" id="main_nav">
+            <ul class="navbar-nav mx-auto">
+                <li id="home" class="nav-item color-yellow"> <a class="nav-link openHomePage">Home</a> </li>
+                <li id="about" class="nav-item "><a class="nav-link openAboutPage"> About </a></li>
+                <li id="work" class="nav-item"><a class="nav-link openWorkPage" href="#"> Work </a></li>
+                <li id="contact" class="nav-item"><a class="nav-link openContactPage"> Contact </a></li>
+            </ul>
+            <span id="phone" class="red-background nav-phone">000-535-787</span>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <img class="home-shape-hero" src="img\home-page\Gruppe 534.png" alt="">
+
+
+
+
+
+    <div class="large-screen-version">
+        <section class="header-home">
+            <!-- Hero part -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-5 pt-1 ">
+                        <img class="mb-5" src="img\home-page\signiture.png" style="z-index: -10;" alt="">
+
+                        <p class="mt-5">
+                            <span class="txt-type" data-wait="3000" data-words='["Web Developer", "Artist"]'>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <button class="btn btn-outline-dark rounded-pill col-12 mt-3 openAboutPage">About Me <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></button>
+                    </div>
+                    <div class="col-2 ">
+                        <button class="btn btn-outline-dark rounded-pill col-12 mt-3 openAboutPage">Work <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></button>
+                    </div>
+                    <div class="col-12 mb-4"></div>
+                    <div class="col-1 d-flex justify-content-center">
+                        <i class="fab fa-instagram" style="font-size: 40px;"></i>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center">
+                        <i class="fab fa-github" style="font-size: 40px;"></i>
+                    </div>
+                    <div class="col-1 d-flex justify-content-center">
+                        <i class="fab fa-linkedin" style="font-size: 40px;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- Phone Version -->
+    <div class="phone-version">
+        <div class="container" style="margin-top: 100px; ">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <img style="z-index: 100;" src="img\home-page\horizontal-signiture.png" alt="">
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-4">
+                    <img style="width: 100%; height: auto;" src="img\home-page\mobile-version.png" alt="">
+                </div>
+                <div class="col-12 text-center mb-3" style="color: #666666; font-size: 35px;">
+                    <span>Web Developer and Web Designer</span>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-outline-dark rounded-pill col-12 mt-3 openAboutPage">About Me <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg></button>
+                </div>
+                <div class="col-6 ">
+                    <button class="btn btn-outline-dark rounded-pill col-12 mt-3 openWorkPage">Work <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-basic mt-5">
+            <footer>
+                <div class="social " style="color: white;"><a href="#">
+                        <i class="fab fa-instagram"></i></a><a href="#">
+                        <i class="fab fa-github"></i></a><a href="#">
+                        <i class="fab fa-linkedin"></i></a>
+                </div>
+
+                <p class="copyright" style="color: white;">Kevin Zagar © 2021</p>
+            </footer>
+        </div>
+
+    </div>
+
+
+    <div class="home-backgorund">
+        <svg class="svg-lg-right-background-patterns" xmlns="http://www.w3.org/2000/svg" width="1457.903"
+            height="2059.569" viewBox="0 0 1457.903 2059.569">
+            <path id="Pfad_9519" data-name="Pfad 9519"
+                d="M435.409,1931.661c18.84,112.678,66.93,172.729,114.333,204.54,148.824,100.141,313.041,1.929,463.894-138.389,54.613-50.822,109.636-108.757,154.9-203.763,92.156-193.343,128.451-537.613,84.082-797.458-15.081-88.511-38.121-165.78-62.9-237.99-44.058-128.415-95.133-244.628-156.747-317.073-43.933-51.652-92.227-79.882-140.9-99.76C756.1,286.23,612.6,294.943,476.644,401.3,417.029,447.857,356.746,517.56,315.88,639.55s-56.414,306.864-22.2,427.868c14.131,50.058,35.013,84.74,55.539,118.158,30.208,49.106,61.045,98.425,84.554,166.568,24.269,70.422,47.757,186.944,26.051,279.683C436.523,1731.367,416.554,1819.147,435.409,1931.661Z"
+                transform="translate(145.57 -354.878) rotate(11)" fill="#d0e5d5" />
+            <path id="Pfad_9520" data-name="Pfad 9520"
+                d="M435.409,1931.661c18.84,112.678,66.93,172.729,114.333,204.54,148.824,100.141,313.041,1.929,463.894-138.389,54.613-50.822,109.636-108.757,154.9-203.763,92.156-193.343,128.451-537.613,84.082-797.458-15.081-88.511-38.121-165.78-62.9-237.99-44.058-128.415-95.133-244.628-156.747-317.073-43.933-51.652-92.227-79.882-140.9-99.76C756.1,286.23,612.6,294.943,476.644,401.3,417.029,447.857,356.746,517.56,315.88,639.55s-56.414,306.864-22.2,427.868c14.131,50.058,35.013,84.74,55.539,118.158,30.208,49.106,61.045,98.425,84.554,166.568,24.269,70.422,47.757,186.944,26.051,279.683C436.523,1731.367,416.554,1819.147,435.409,1931.661Z"
+                transform="translate(268.57 -320.146) rotate(11)" fill="#90b999" />
+        </svg>
+
+
+
+
+
+
+
+        <svg class="svg-lg-left-background-patterns" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+            <defs>
+                <clipPath id="clip-path">
+                    <rect id="Rechteck_80" data-name="Rechteck 80" width="1920" height="1080"
+                        transform="translate(16981 -833)" fill="#fff" stroke="#707070" stroke-width="1" />
+                </clipPath>
+            </defs>
+            <g id="Gruppe_maskieren_1" data-name="Gruppe maskieren 1" transform="translate(-16981 833)"
+                clip-path="url(#clip-path)">
+                <g id="Gruppe_535" data-name="Gruppe 535" transform="translate(16059.34 -921.901) rotate(-2)">
+                    <path id="Pfad_9518" data-name="Pfad 9518"
+                        d="M435.409,1931.661c18.84,112.678,66.93,172.729,114.333,204.54,148.824,100.141,313.041,1.929,463.894-138.389,54.613-50.822,109.636-108.757,154.9-203.763,92.156-193.343,128.451-537.613,84.082-797.458-15.081-88.511-38.121-165.78-62.9-237.99-44.058-128.415-95.133-244.628-156.747-317.073-43.933-51.652-92.227-79.882-140.9-99.76C756.1,286.23,612.6,294.943,476.644,401.3,417.029,447.857,356.746,517.56,315.88,639.55s-56.414,306.864-22.2,427.868c14.131,50.058,35.013,84.74,55.539,118.158,30.208,49.106,61.045,98.425,84.554,166.568,24.269,70.422,47.757,186.944,26.051,279.683C436.523,1731.367,416.554,1819.147,435.409,1931.661Z"
+                        transform="matrix(-0.788, 0.616, -0.616, -0.788, 2507.353, 1747.981)" fill="#d0e5d5" />
+                    <path id="Pfad_9510" data-name="Pfad 9510"
+                        d="M435.409,1437.847c18.84,78.406,66.93,120.193,114.333,142.329,148.824,69.683,313.041,1.342,463.894-96.3,54.613-35.364,109.636-75.678,154.9-141.788,92.156-134.538,128.451-374.1,84.082-554.909-15.081-61.59-38.121-115.358-62.9-165.6-44.058-89.357-95.133-170.224-156.747-220.635-43.933-35.942-92.227-55.586-140.9-69.418C756.1,292.878,612.6,298.941,476.644,372.951c-59.615,32.394-119.9,80.9-160.764,165.784s-56.414,213.531-22.2,297.731c14.131,34.833,35.013,58.966,55.539,82.22,30.208,34.17,61.045,68.489,84.554,115.906,24.269,49,47.757,130.084,26.051,194.617C436.523,1298.473,416.554,1359.555,435.409,1437.847Z"
+                        transform="matrix(-0.788, 0.616, -0.616, -0.788, 2117.104, 1665.71)" fill="#90b999" />
+                    <path id="Pfad_9511" data-name="Pfad 9511"
+                        d="M435.409,1437.847c18.84,78.406,66.93,120.193,114.333,142.329,148.824,69.683,313.041,1.342,463.894-96.3,54.613-35.364,109.636-75.678,154.9-141.788,92.156-134.538,128.451-374.1,84.082-554.909-15.081-61.59-38.121-115.358-62.9-165.6-44.058-89.357-95.133-170.224-156.747-220.635-43.933-35.942-92.227-55.586-140.9-69.418C756.1,292.878,612.6,298.941,476.644,372.951c-59.615,32.394-119.9,80.9-160.764,165.784s-56.414,213.531-22.2,297.731c14.131,34.833,35.013,58.966,55.539,82.22,30.208,34.17,61.045,68.489,84.554,115.906,24.269,49,47.757,130.084,26.051,194.617C436.523,1298.473,416.554,1359.555,435.409,1437.847Z"
+                        transform="matrix(-0.788, 0.616, -0.616, -0.788, 2051.186, 1734.053)" fill="#7ba184" />
+                    <path id="Pfad_9513" data-name="Pfad 9513"
+                        d="M435.409,1437.847c18.84,78.406,66.93,120.193,114.333,142.329,148.824,69.683,313.041,1.342,463.894-96.3,54.613-35.364,109.636-75.678,154.9-141.788,92.156-134.538,128.451-374.1,84.082-554.909-15.081-61.59-38.121-115.358-62.9-165.6-44.058-89.357-95.133-170.224-156.747-220.635-43.933-35.942-92.227-55.586-140.9-69.418C756.1,292.878,612.6,298.941,476.644,372.951c-59.615,32.394-119.9,80.9-160.764,165.784s-56.414,213.531-22.2,297.731c14.131,34.833,35.013,58.966,55.539,82.22,30.208,34.17,61.045,68.489,84.554,115.906,24.269,49,47.757,130.084,26.051,194.617C436.523,1298.473,416.554,1359.555,435.409,1437.847Z"
+                        transform="matrix(-0.788, 0.616, -0.616, -0.788, 2005.798, 1781.872)" fill="#586e5d" />
+                </g>
+            </g>
+        </svg>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+    <script src="js\typewriter.js"></script>
+    <!-- Free licence submit button from Green Sock-->
+
+
+
+
+    <!-- Transition Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+    <script src="js\containerAnimation.js"></script>
+    <script src="js\transitionAnimation.js"></script>
+    <!-- Navbar shrink function -->
+    <script src="js\navbar.js"></script>
+
+    <!-- TODO: Submit Button gone -->
+
+</body>
+
+</html>
