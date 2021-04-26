@@ -14,6 +14,7 @@
 
     <title>Kevin Zagar - Portfolio</title>
 
+    <link rel="icon" href="http://example.com/favicon.png">
 </head>
 
 <body class="homepage">
@@ -23,7 +24,40 @@
     <div class="slider-three"></div>
 
 
-
+<!-- Navigation -->
+<div class="navigation-wrap bg-light start-header start-style">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-md navbar-light" >
+                
+                    <a class="navbar-brand openHomePage" target="_blank"><img class="mt-1" src="img\logo-black.png" alt=""></a>	
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto py-4 py-md-0">
+                            <li class="nav-item active pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link openHomePage">Home</a>
+                            </li>
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link openAboutPage">About</a>
+                            </li>
+                            <li class="nav-item  pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link" href="#">Work</a>
+                            </li>
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link openContactPage" >Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>		
+            </div>
+        </div>
+    </div>
+</div>
 
 
     <div class="hero__wrapper" style="margin-top: 8%;">
@@ -75,8 +109,21 @@
         </div>
     </div>
 
+     <!-- Footer -->
+     <div class="footer-basic mt-5 home-phone-footer" style="display: none;">
+        <footer>
+            <div class="social " style="color: white;"><a href="#">
+                    <i class="fab fa-instagram"></i></a><a href="#">
+                    <i class="fab fa-github"></i></a><a href="#">
+                    <i class="fab fa-linkedin"></i></a>
+            </div>
 
-<svg xmlns="http://www.w3.org/2000/svg" style="z-index: 1; display: flex; position: absolute; top: 10vh; left: 10vh" xmlns:xlink="http://www.w3.org/1999/xlink" width="231.801" height="236.753" viewBox="0 0 231.801 236.753">
+            <p class="copyright" style="color: white;">Kevin Zagar © 2021</p>
+        </footer>
+    </div>
+
+
+<svg  class="svg-blob-orange" xmlns="http://www.w3.org/2000/svg" style="z-index: -100; display: flex; position: absolute; top: 10vh; left: 10%" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 231.801 236.753">
     <defs>
       <linearGradient id="linear-gradient" x2="0" y2="1" gradientUnits="objectBoundingBox">
         <stop offset="0" stop-color="#ff5f6d"/>
@@ -86,6 +133,27 @@
     <path id="blob" d="M282.76,262.668q-15.766,69.424-82.518,45.612T84.182,238.856q-49.309-45.612-9.057-106.988T181.794,78.542q66.417,8.049,91.574,61.375T282.76,262.668Z" transform="translate(-57.033 -77.609)" fill="url(#linear-gradient)"/>
   </svg>
   
+
+  <svg width="300" height="300" style="z-index: -100; display: flex; position: absolute; bottom: 1%; left: 0%" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" id="blobSvg">
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color: rgb(76, 161, 175);"></stop>
+        <stop offset="100%" style="stop-color: rgb(196, 224, 229);"></stop>
+      </linearGradient>
+    </defs>
+    <path id="blob" d="M429,345.5Q360,441,248.5,443.5Q137,446,94.5,348Q52,250,99,160Q146,70,240,87.5Q334,105,416,177.5Q498,250,429,345.5Z" fill="url(#gradient)"></path>
+  </svg>
+
+
+  <svg class="svg-blob-green" width="400" height="400" style="z-index: -100; display: flex; position: absolute; bottom: 0%; right: 10vh" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  id="blobSvg">
+    <defs>
+      <linearGradient id="gradient-green" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color: rgb(60, 165, 92);"></stop>
+        <stop offset="100%" style="stop-color: rgb(60, 140, 60);"></stop>
+      </linearGradient>
+    </defs>
+    <path id="blob" d="M384,320Q331,390,246,397.5Q161,405,93,327.5Q25,250,89,165.5Q153,81,257.5,68.5Q362,56,399.5,153Q437,250,384,320Z" fill="url(#gradient-green)"></path>
+  </svg>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -111,8 +179,8 @@
     <!-- Navbar shrink function -->
     <script src="js\navbar.js"></script>
 
-    <!-- TODO: Submit Button gone -->
 
+    <!-- jQuery Quick Navigation on Phone Handler -->
     <script>
 $(function () {
   $('[data-toggle="popover"]').popover()

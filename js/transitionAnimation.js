@@ -196,3 +196,5 @@ $(".openContactPage").click(function () {
       window.location.href = 'contact.html';
     });
 });
+
+

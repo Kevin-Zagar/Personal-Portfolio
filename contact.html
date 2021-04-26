@@ -9,7 +9,7 @@
     <!-- TODO Get the ekko light box working for personal Projekts -->
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="https://kit.fontawesome.com/1d62a1b076.js" crossorigin="anonymous"></script>
-    <title>Kevin Zagar - Portfolio</title>
+    <title>Kevin Zagar - Contact </title>
 
 </head>
 
@@ -19,31 +19,49 @@
     <div class="slider-three"></div>
 
 
-    <!-- White Background for the main background -->
+   <!-- White Background for the main background -->
     <div class="contact-page-background"></div>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top " id="banner">
-        <a id="logo" class="navbar-brand" href="#"><img src="img\logo-black.png" alt="logo" width="60px"></a>
-        <!-- Brand -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center text-md-left" id="main_nav">
-            <ul class="navbar-nav mx-auto">
-                <li id="home" class="nav-item "> <a class="nav-link openHomePage">Home</a> </li>
-                <li id="about" class="nav-item"><a class="nav-link openAboutPage"> About </a></li>
-                <li id="work" class="nav-item"><a class="nav-link openWorkPage"> Work </a></li>
-                <li id="contact" class="nav-item "><a class="nav-link disabled"> Contact </a></li>
-            </ul>
-            <span id="phone" class="red-background nav-phone">000-535-787</span>
+ 
+    <!-- Navigation -->
+ <div class="navigation-wrap bg-light start-header start-style">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-md navbar-light" >
+                
+                    <a class="navbar-brand openHomePage" target="_blank"><img class="mt-1" src="img\logo-black.png" alt=""></a>	
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto py-4 py-md-0">
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link openHomePage">Home</a>
+                            </li>
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link openAboutPage">About</a>
+                            </li>
+                            <li class="nav-item  pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link" href="#">Work</a>
+                            </li>
+                            <li class="nav-item  active pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link openContactPage" >Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>		
+            </div>
         </div>
-    </nav>
+    </div>
+</div>
 
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-6 d-flex justify-content-center">
-                <svg class="svg-contact-page" width="90vh" height="90vh"
+                <svg class="svg-contact-page" style="margin-top: 25%;"  width="60vh" height="60vh"
                     style="margin-top: 5%; left: 150px; position: absolute;" viewBox="0 0 577 494" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
@@ -134,7 +152,7 @@
                 </svg>
 
             </div>
-            <div class="col d-flex justify-content-center ">
+            <div class="col d-flex justify-content-center mt-lg-5">
 
                 <div class="card-contact px-5 py-5 text-center">
                     <h1 class="contact-header" style="font-weight: normal; margin-bottom: 5%;">Contact Me</h1>
@@ -142,11 +160,12 @@
                         Got a question? I'd love to hear from you. Send me a message and i'll respond as
                         soon as possible!</span>
 
-                    <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                    <form action="https://formspree.io/f/mrgrbwqb"
+                    method="POST">
                         <input type="text" class="form-control" placeholder="Name" name="name" />
                         <input type="text" class="form-control" placeholder="Phone" name="phone" />
                         <input type="text" class="form-control" placeholder="Email" name="email" />
-                        <textarea style="max-height: 200px; min-height: 50px;" id="date" type="text" name="message"
+                        <textarea style="max-height: 200px; min-height: 130px;" id="date" type="text" name="message"
                             class="form-control mt-4" placeholder="You're Message"></textarea>
                         <div class="my-2">
                             <div data-netlify-recaptcha="true"></div>
@@ -161,17 +180,18 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <div class="footer-basic mt-3  d-lg-none " style="background-color: #6596a7;">
-        <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
-                        class="icon ion-social-snapchat"></i></a><a href="#"><i
-                        class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a>
-            </div>
+   <!-- Footer -->
+   <div class="footer-basic mt-5" style="background-color: #9d71c4;">
+    <footer>
+        <div class="social" style="color: white;"><a href="#">
+                <i class="fab fa-instagram"></i></a><a href="#">
+                <i class="fab fa-github"></i></a><a href="#">
+                <i class="fab fa-linkedin"></i></a>
+        </div>
 
-            <p class="copyright" style="color: white;">Kevin Zagar © 2021</p>
-        </footer>
-    </div>
+        <p class="copyright" style="color: white;">Kevin Zagar © 2021</p>
+    </footer>
+</div>
 
 
 
